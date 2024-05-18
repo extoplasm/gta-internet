@@ -1,0 +1,20 @@
+:root {
+    margin: 0;
+    max-width: 1280px;
+    --defblack: #212121;
+    --deftext: #515151;
+    --defwhite: #e6e6e6;
+}
+
+#title {
+    padding-top: 50px;
+    color: var(--deftext);
+    background-color: var(--defblack)
+}
+
+#navbar {
+    color: var(--deftext);
+    background-color: var(--defwhite);
+    padding: 10px;
+    box-shadow: var(--defblack) 0px 0px 10px;
+}

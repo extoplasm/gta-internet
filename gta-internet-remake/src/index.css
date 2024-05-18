@@ -1,0 +1,17 @@
+@font-face {
+  font-family: ChaletLondonNineteenSixty;
+  src: url('./../ChaletLondon1960Regular.otf')
+}
+
+:root {
+  font-family: ChaletLondonNineteenSixty;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
