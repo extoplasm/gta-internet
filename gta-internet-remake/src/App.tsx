@@ -16,6 +16,7 @@ export default function App() {
         history={pageHistory}
         setHistory = {setPageHistory}
       />
+
       <button onClick={() => {
         setPageHistory(
           [
@@ -23,15 +24,32 @@ export default function App() {
             { id: pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].id + 1 : 1, name: 'www.eyefind.info' }
           ]
         )
-      }}>go to eyefind.info</button>
+      }}>go to www.eyefind.info</button>
+
+      <br />
+
       <button onClick={() => {
         setPageHistory(
           [
             ...pageHistory, 
-            { id: pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].id + 1 : 1, name: 'www.sigma.com' }
+            { id: pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].id + 1 : 1, name: 'www.toeshoeusa.com' }
           ]
         )
-      }}>go to sigma.com</button>
+      }}>go to www.toeshoeusa.com</button>
+      <div id="page">
+        {/*if (pageHistory.slice(-1)[0].name === 'whatever page') {
+            <WhateverPage props/>
+        } else {
+            <EyefindError/>
+        }
+        
+        btw these should look like this in the folder
+        src/pages/whateverpage 
+        src/pages/eyefind/error 
+
+        and import these just up the top
+        */}
+      </div>
     </>
   );
 }
