@@ -5,10 +5,10 @@ gta website recreation in react
 1. - [ ] header
     1. - [x] title
     2. - [ ] navbar
-        1. - [ ] navigation // dont worry about this right now
+        1. - [ ] navigation *// dont worry about this right now*
             1. - [ ] backwards arrow 
             2. - [ ] forwards arrow
-        2. - [ ] home button // set page to eyefind.info 
+        2. - [ ] home button *// set page to eyefind.info *
         3. - [ ] history button
             1. - [ ] dropdown
             2. - [x] icons
@@ -16,7 +16,7 @@ gta website recreation in react
         4. - [] search bar
             1. - [ ] input field
             2. - [ ] set and update history
-            3. - [ ] clear text
+            3. - [ ] close window *// im pretty sure this just closes the app on the phone, just make this a button that does nothing*
             4. - [ ] icons
 2. - [ ] app
     1. - [ ] pages *// all pages in the gta v version not online (have not included exclusively gta online pages) (understand the pages grow as the story progresses, dont worry about this, just include as much as possible, also all pages should be viewed from the perspective of michael (if you really want to, ill probably make a branch for the other characters viewpoints))*
@@ -112,6 +112,10 @@ gta website recreation in react
 read [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 # notes
-all sites are in the xbox aspect ratio of width 1920px (max-width and min-width are set to these on all websites) 
+all sites are in the xbox aspect ratio of width 1920px (max-width and min-width are set to these on all websites)
 
 I DO NOT WANT TO MAKE RESPONSIVE UI!!!!!!!!!!!!!
+
+currently not planning to make functional search bar, which returns relevant search items (if some wizard were to come and help i would be very appreciative)
+
+all ui is based off michael's phone
