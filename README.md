@@ -13,7 +13,7 @@ gta website recreation in react
             1. - [ ] dropdown
             2. - [x] icons
             3. - [x] list history
-        4. - [] search bar
+        4. - [ ] search bar
             1. - [x] input field
             2. - [x] set and update history
             3. - [ ] close window *// im pretty sure this just closes the app on the phone, just make this a button that does nothing*
