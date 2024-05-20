@@ -8,7 +8,7 @@ gta website recreation in react
         1. - [ ] navigation *// dont worry about this right now*
             1. - [ ] backwards arrow 
             2. - [ ] forwards arrow
-        2. - [ ] home button *// set page to eyefind.info *
+        2. - [ ] home button *// set page to eyefind.info*
         3. - [ ] history button
             1. - [ ] dropdown
             2. - [x] icons
