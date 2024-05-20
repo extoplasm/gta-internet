@@ -2,8 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/header';
 
-let historyPageID = 0
-
 interface History {
   id: number;
   name: string;
@@ -15,17 +13,25 @@ export default function App() {
     <>
       <Header 
         preview="--- EYEFIND... it's like a series of tubes ---"
-        currentpage="www.eyefind.info"
         history={pageHistory}
+        setHistory = {setPageHistory}
       />
       <button onClick={() => {
         setPageHistory(
           [
             ...pageHistory, 
-            { id: historyPageID++, name: 'www.eyefind.info' }
+            { id: pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].id + 1 : 1, name: 'www.eyefind.info' }
           ]
         )
       }}>go to eyefind.info</button>
+      <button onClick={() => {
+        setPageHistory(
+          [
+            ...pageHistory, 
+            { id: pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].id + 1 : 1, name: 'www.sigma.com' }
+          ]
+        )
+      }}>go to sigma.com</button>
     </>
   );
 }

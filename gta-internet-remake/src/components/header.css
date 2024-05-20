@@ -17,7 +17,7 @@
 #navbar {
     color: var(--deftext);
     background-color: var(--defwhite);
-    padding: 10px;
+    padding: 10px 100px;
     box-shadow: var(--defblack) 0px 0px 10px;
     display: flex;
     justify-content: space-between;
@@ -25,4 +25,19 @@
 
 #navbar > #history-button > #button-icon > * {
     padding: 5px;
+}
+
+input {
+    color: var(--deftext);
+    text-decoration: none;
+    appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    opacity: 1;
+    color: var(--deftext)
 }

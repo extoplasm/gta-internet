@@ -1,4 +1,5 @@
 import './header.css'
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
@@ -10,11 +11,12 @@ interface History {
 
 interface Props {
     preview: string;
-    currentpage: string;
     history: Array<History>;
+    setHistory: Function;
 }
 
-export default function header({ preview, currentpage, history }: Props) {
+export default function header({ preview, history, setHistory }: Props) {
+    const [searchQuery, setSearchQuery] = useState('')
     return (
         <>
             <div id="title">
@@ -31,20 +33,36 @@ export default function header({ preview, currentpage, history }: Props) {
                         <FontAwesomeIcon icon={faClock} />
                         <FontAwesomeIcon icon={faCaretDown} />
                     </div>
-                    <div id="dropdown">
+                    <div id="dropdown"> {/* make this actually drop down */}
                         <ul>
                             {history.map(p => (
-                                <p key={p.id}>{p.name}</p>
-                            ))}
+                                <li key={p.id}>{p.name}</li>
+                            ))
+                            }
                         </ul>
                     </div>
                 </div>
                 <div id="search-bar">
-                    <div id="text-field">
-                        {currentpage}
-                    </div>
-                    <div id="clear-text-button">
-                        
+                    <input 
+                        id="search-field" 
+                        type="text" 
+                        value={searchQuery}
+                        placeholder={history.slice(-1)[0] ? history.slice(-1)[0].name : 'www.eyefind.info/error'}
+                        onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                    <button id="search-submit" 
+                        onClick={() => {
+                            if(searchQuery.trim()) {
+                                setHistory([...history, {name: searchQuery, id: history.slice(-1)[0] ? history.slice(-1)[0].id + 1 : 1}])
+                                setSearchQuery('')
+                            }
+                            }
+                        }
+                    > search
+                        {/* search bar icon goes here (from fontawesome)*/}
+                    </button>
+                    <div id="close window"> 
+                    {/* in game this closes the window, but here just do nothing */}
                     </div>
                 </div>
             </div>
