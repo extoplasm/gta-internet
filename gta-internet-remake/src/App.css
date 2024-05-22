@@ -14,7 +14,3 @@ button {
 	outline: inherit;
   transition: all .1s linear
 }
-
-button:hover {
-  background-color: grey;
-}

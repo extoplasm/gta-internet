@@ -5,6 +5,7 @@
     --defblack: #212121;
     --deftext: #515151;
     --defwhite: #e6e6e6;
+    --accwhite: #fff
 }
 
 #title {
@@ -24,7 +25,34 @@
 }
 
 #navbar > #history-button > #button-icon > * {
-    padding: 5px;
+    padding: 2px;
+}
+
+#navbar > #history-button > #button-icon {
+    border: 2px var(--defblack) solid;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+#navbar > #history-button > #dropdown-container {
+    position: relative;
+    display: inline-block;
+    background-color: var(--accwhite);
+}
+
+#navbar > #history-button > #dropdown-container > #dropdown {
+    display: none;
+    position: absolute;
+    width: 25vw;
+    box-shadow: var(--defblack) 0px 0px 10px;
+    z-index: 1;
+    background-color: var(--accwhite);
+}
+
+#navbar > #history-button > #dropdown-container > #dropdown button {
+    background-color: var(--accwhite);
+    width: 25vw;
+    text-align: left;
 }
 
 input {

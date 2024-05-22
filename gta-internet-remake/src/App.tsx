@@ -49,6 +49,7 @@ export default function App() {
 
         and import these just up the top
         */}
+        { pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].name : "www.eyefind.info" }
       </div>
     </>
   );
