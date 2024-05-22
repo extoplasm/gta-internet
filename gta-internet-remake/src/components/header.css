@@ -5,7 +5,8 @@
     --defblack: #212121;
     --deftext: #515151;
     --defwhite: #e6e6e6;
-    --accwhite: #fff
+    --accwhite: #ffffff;
+    --accgrey: #777777;
 }
 
 #title {
@@ -44,15 +45,21 @@
     display: none;
     position: absolute;
     width: 25vw;
-    box-shadow: var(--defblack) 0px 0px 10px;
+    box-shadow: var(--defblack) 1px 1px 5px;
     z-index: 1;
     background-color: var(--accwhite);
+    border: 2px var(--defblack) solid;
 }
 
 #navbar > #history-button > #dropdown-container > #dropdown button {
     background-color: var(--accwhite);
     width: 25vw;
     text-align: left;
+}
+
+#navbar > #history-button > #dropdown-container > #dropdown button:hover {
+    background-color: var(--accgrey);
+    color: var(--accwhite)
 }
 
 input {
