@@ -2,10 +2,12 @@
     margin: 0;
     max-width: 1920px;
     min-width: 1920px;
-    --defblack: #212121;
+    --defblack: #0c0c0c;
     --deftext: #515151;
+    --defgrey: #cccccc;
     --defwhite: #e6e6e6;
     --accwhite: #ffffff;
+    --accblack: #2a2a2a;
     --accgrey: #777777;
 }
 
@@ -20,7 +22,10 @@
     color: var(--deftext);
     background-color: var(--defwhite);
     padding: 10px 100px;
-    box-shadow: var(--defblack) 0px 0px 10px;
+    box-shadow: var(--accblack) -5px 1px 10px;
+    border: 3px var(--accgrey) solid;
+    border-right: none;
+    border-left: none;
     display: flex;
     justify-content: space-between;
 }
@@ -30,20 +35,21 @@
 }
 
 #navbar > #history-button > #button-icon {
-    border: 2px var(--defblack) solid;
+    border: 2px var(--accgrey) solid;
+    box-shadow: var(--accblack) 0px 1px 1px;
     border-radius: 8px;
     padding: 3px;
 }
 
 #navbar > #history-button > #button-icon:hover {
-    border: 2px var(--accgrey) solid;
+    border: 2px var(--defgrey) solid;
     border-radius: 8px;
 }
 
-
 #navbar > #history-button > #dropdown-container {
     position: relative;
-    display: inline-block;
+    display: block;
+    margin: 5px 0;
     background-color: var(--accwhite);
 }
 
@@ -51,10 +57,10 @@
     display: none;
     position: absolute;
     width: 25vw;
-    box-shadow: var(--defblack) 1px 1px 5px;
+    box-shadow: var(--accblack) 2px 2px 5px;
     z-index: 1;
     background-color: var(--accwhite);
-    border: 2px var(--defblack) solid;
+    border: 1px var(--defblack) solid;
 }
 
 #navbar > #history-button > #dropdown-container > #dropdown button {
