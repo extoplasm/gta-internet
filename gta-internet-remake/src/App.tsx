@@ -5,6 +5,7 @@ import Header from './components/header';
 interface History {
   id: number;
   name: string;
+  backarrowed: boolean
 }
 
 export default function App() {
@@ -20,7 +21,7 @@ export default function App() {
       <button onClick={() => {
         setPageHistory(
           [
-            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.eyefind.info' },
+            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.eyefind.info', backarrowed: false},
             ...pageHistory, 
           ]
         )
@@ -31,7 +32,7 @@ export default function App() {
       <button onClick={() => {
         setPageHistory(
           [
-            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.toeshoeusa.com' },
+            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.toeshoeusa.com', backarrowed: false },
             ...pageHistory, 
           ]
         )

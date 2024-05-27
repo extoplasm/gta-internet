@@ -7,6 +7,7 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 interface History {
     id: number;
     name: string;
+    backarrowed: boolean;
 }
 
 interface Props {
@@ -25,8 +26,29 @@ export default function header({ preview, history, setHistory }: Props) {
             </div>
             <div id="navbar">
                 <div id="navigation-buttons">
-                    <div id="back-arrow-button"></div>
-                    <div id="forward-arrow-button"></div>
+                    <button id="back-arrow-button" onClick={() => {
+                        if (history[1]) {
+                            setHistory([
+                                { name: history[1].name, id: history[0] ? history[0].id + 1 : 1, backarrowed: true },
+                                ...history, 
+                            ])
+                        }
+                    }
+                    }>
+                    daaaa 
+                    </button>
+                    <br />
+                    <button id="forward-arrow-button" onClick={() => {
+                        if (history[1].backarrowed) {
+                            setHistory([
+                                { name: history[1].name, id: history[0] ? history[0].id + 1 : 1, backarrowed: false },
+                                ...history, 
+                            ])
+                        }
+                    }
+                    }>
+                    d
+                    </button>
                 </div>
                 <div id="home-button"></div>
                 <div id="history-button">
@@ -39,12 +61,12 @@ export default function header({ preview, history, setHistory }: Props) {
                     <div id="dropdown-container"> {/* make this actually drop down */}
                         <div id="dropdown" ref={dropdownRef}>
                             {history
-                                .filter((_p,_) => (_ < 6)) // so as to not flood the viewers screen
+                                .filter((_p,_) => (_ < 10)) // so as to not flood the viewers screen
                                 .map((p,_) => (
                                 <div key={p.id}>
                                     <button onClick={() => {
                                         setHistory([
-                                            { id: history[0] ? history[0].id + 1 : 1, name: p.name },
+                                            { id: history[0] ? history[0].id + 1 : 1, name: p.name, backarrowed: false },
                                             ...history, 
                                         ])}}
                                     >
@@ -69,7 +91,7 @@ export default function header({ preview, history, setHistory }: Props) {
                         onClick={() => {
                             if(searchQuery.trim()) {
                                 setHistory([
-                                    {name: `www.eyefind.info/search+${searchQuery}`, id: history[0] ? history[0].id + 1 : 1},
+                                    {name: `www.eyefind.info/search+${searchQuery}`, id: history[0] ? history[0].id + 1 : 1, backarrowed: false},
                                     ...history, 
                                 ])
                                 setSearchQuery('')
