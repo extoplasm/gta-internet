@@ -38,13 +38,16 @@ export default function header({ preview, history, setHistory }: Props) {
                     </button>
                     <div id="dropdown-container"> {/* make this actually drop down */}
                         <div id="dropdown" ref={dropdownRef}>
-                            {history.map(p => (
+                            {history
+                                .filter((_p,_) => (_ < 6)) // so as to not flood the viewers screen
+                                .map((p,_) => (
                                 <div key={p.id}>
                                     <button onClick={() => {
                                         setHistory([
+                                            { id: history[0] ? history[0].id + 1 : 1, name: p.name },
                                             ...history, 
-                                            { id: history.slice(-1)[0] ? history.slice(-1)[0].id + 1 : 1, name: p.name }
-                                        ])}}>
+                                        ])}}
+                                    >
                                             {p.name}
                                     </button>
                                     <br />
@@ -59,13 +62,16 @@ export default function header({ preview, history, setHistory }: Props) {
                         id="search-field" 
                         type="text" 
                         value={searchQuery}
-                        placeholder={history.slice(-1)[0] ? history.slice(-1)[0].name : 'www.eyefind.info'}
+                        placeholder={history[0] ? history[0].name : 'www.eyefind.info'}
                         onChange={(e) => setSearchQuery(e.target.value)}
                     />
                     <button id="search-submit" 
                         onClick={() => {
                             if(searchQuery.trim()) {
-                                setHistory([...history, {name: `www.eyefind.info/search+${searchQuery}`, id: history.slice(-1)[0] ? history.slice(-1)[0].id + 1 : 1}])
+                                setHistory([
+                                    {name: `www.eyefind.info/search+${searchQuery}`, id: history[0] ? history[0].id + 1 : 1},
+                                    ...history, 
+                                ])
                                 setSearchQuery('')
                             }
                             }

@@ -20,8 +20,8 @@ export default function App() {
       <button onClick={() => {
         setPageHistory(
           [
+            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.eyefind.info' },
             ...pageHistory, 
-            { id: pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].id + 1 : 1, name: 'www.eyefind.info' }
           ]
         )
       }}>go to www.eyefind.info</button>
@@ -31,13 +31,13 @@ export default function App() {
       <button onClick={() => {
         setPageHistory(
           [
+            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.toeshoeusa.com' },
             ...pageHistory, 
-            { id: pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].id + 1 : 1, name: 'www.toeshoeusa.com' }
           ]
         )
       }}>go to www.toeshoeusa.com</button>
       <div id="page">
-        {/*if (pageHistory.slice(-1)[0].name === 'whatever page') {
+        {/*if (pageHistory[0].name === 'whatever page') {
             <WhateverPage props/>
         } else {
             <EyefindError/>
@@ -49,7 +49,7 @@ export default function App() {
 
         and import these just up the top
         */}
-        { pageHistory.slice(-1)[0] ? pageHistory.slice(-1)[0].name : "www.eyefind.info" }
+        { pageHistory[0] ? pageHistory[0].name : "www.eyefind.info" }
       </div>
     </>
   );
