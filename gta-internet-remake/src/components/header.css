@@ -35,6 +35,12 @@
     padding: 3px;
 }
 
+#navbar > #history-button > #button-icon:hover {
+    border: 2px var(--accgrey) solid;
+    border-radius: 8px;
+}
+
+
 #navbar > #history-button > #dropdown-container {
     position: relative;
     display: inline-block;
