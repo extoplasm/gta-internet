@@ -5,38 +5,38 @@ import Header from './components/header';
 interface History {
   id: number;
   name: string;
-  backarrowed: boolean
+  current: boolean
 }
 
+
 export default function App() {
-  const [pageHistory, setPageHistory] = useState(Array<History>)
+  const [pageHistory, setPageHistory] = useState<History[]>([{id: 1, name: 'www.eyefind.info', current: true}])
+
+  const addNewPage = (page : string) => {
+    const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: page, current: true }
+
+    const updatedHistory = pageHistory.map(p => ({
+      ...p,
+      current: false,
+    }));
+
+    setPageHistory([newCurrent, ...updatedHistory])
+    console.log(pageHistory, newCurrent )
+  }
+  
   return (
     <>
       <Header 
         preview="--- EYEFIND... it's like a series of tubes ---"
         history={pageHistory}
-        setHistory = {setPageHistory}
+        addNewPage = {addNewPage}
       />
 
-      <button onClick={() => {
-        setPageHistory(
-          [
-            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.eyefind.info', backarrowed: false},
-            ...pageHistory, 
-          ]
-        )
-      }}>go to www.eyefind.info</button>
+      <button onClick={() => {addNewPage('www.eyefind.info')}}>go www.eyefind.info</button>
 
       <br />
 
-      <button onClick={() => {
-        setPageHistory(
-          [
-            { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: 'www.toeshoeusa.com', backarrowed: false },
-            ...pageHistory, 
-          ]
-        )
-      }}>go to www.toeshoeusa.com</button>
+      <button onClick={() => {addNewPage('www.toeshoeusa.com')}}>go to www.toeshoeusa.com</button>
       <div id="page">
         {/*if (pageHistory[0].name === 'whatever page') {
             <WhateverPage props/>
@@ -50,7 +50,7 @@ export default function App() {
 
         and import these just up the top
         */}
-        { pageHistory[0] ? pageHistory[0].name : "www.eyefind.info" }
+        { pageHistory.filter(p => p.current === true)[0].name }
       </div>
     </>
   );
