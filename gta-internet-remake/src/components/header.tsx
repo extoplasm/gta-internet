@@ -7,16 +7,16 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 interface History {
     id: number;
     name: string;
-    backarrowed: boolean;
+    current: boolean;
 }
 
 interface Props {
     preview: string;
     history: Array<History>;
-    setHistory: Function;
+    addNewPage: Function;
 }
 
-export default function header({ preview, history, setHistory }: Props) {
+export default function header({ preview, history, addNewPage }: Props) {
     const [searchQuery, setSearchQuery] = useState('')
     const dropdownRef = useRef<any>()
     return (
@@ -27,24 +27,14 @@ export default function header({ preview, history, setHistory }: Props) {
             <div id="navbar">
                 <div id="navigation-buttons">
                     <button id="back-arrow-button" onClick={() => {
-                        if (history[1]) {
-                            setHistory([
-                                { name: history[1].name, id: history[0] ? history[0].id + 1 : 1, backarrowed: true },
-                                ...history, 
-                            ])
-                        }
+                        // change page current property
                     }
                     }>
                     daaaa 
                     </button>
                     <br />
                     <button id="forward-arrow-button" onClick={() => {
-                        if (history[1].backarrowed) {
-                            setHistory([
-                                { name: history[1].name, id: history[0] ? history[0].id + 1 : 1, backarrowed: false },
-                                ...history, 
-                            ])
-                        }
+                        // change page current property
                     }
                     }>
                     d
@@ -65,11 +55,8 @@ export default function header({ preview, history, setHistory }: Props) {
                                 .map((p,_) => (
                                 <div key={p.id}>
                                     <button onClick={() => {
-                                        setHistory([
-                                            { id: history[0] ? history[0].id + 1 : 1, name: p.name, backarrowed: false },
-                                            ...history, 
-                                        ])}}
-                                    >
+                                        // change page current property
+                                    }}>
                                             {p.name}
                                     </button>
                                     <br />
@@ -90,10 +77,7 @@ export default function header({ preview, history, setHistory }: Props) {
                     <button id="search-submit" 
                         onClick={() => {
                             if(searchQuery.trim()) {
-                                setHistory([
-                                    {name: `www.eyefind.info/search+${searchQuery}`, id: history[0] ? history[0].id + 1 : 1, backarrowed: false},
-                                    ...history, 
-                                ])
+                                addNewPage(`www.eyefind.info/search+${searchQuery}`)
                                 setSearchQuery('')
                             }
                             }
