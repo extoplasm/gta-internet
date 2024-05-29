@@ -48,7 +48,7 @@ export default function header({ preview, history, addNewPage }: Props) {
                         <FontAwesomeIcon icon={faClock} />
                         <FontAwesomeIcon icon={faCaretDown} />
                     </button>
-                    <div id="dropdown-container"> {/* make this actually drop down */}
+                    <div id="dropdown-container">
                         <div id="dropdown" ref={dropdownRef}>
                             {history
                                 .filter((_p,_) => (_ < 10)) // so as to not flood the viewers screen
@@ -86,7 +86,7 @@ export default function header({ preview, history, addNewPage }: Props) {
                         {/* search bar icon goes here (from fontawesome)*/}
                     </button>
                     <div id="close window"> 
-                    {/* in game this closes the window, but here just do nothing */}
+                    {/* in game this closes the window, but here just do nothing, but make responsive as well*/}
                     </div>
                 </div>
             </div>
