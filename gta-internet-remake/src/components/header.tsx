@@ -2,7 +2,7 @@ import './header.css'
 import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
-import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faHouse } from '@fortawesome/free-solid-svg-icons'
 
 interface History {
     id: number;
@@ -40,7 +40,11 @@ export default function header({ preview, history, addNewPage }: Props) {
                     d
                     </button>
                 </div>
-                <div id="home-button"></div>
+                <button id="home-button" onClick={()=> {
+                    addNewPage('www.eyefind.info')
+                }}>
+                    <FontAwesomeIcon icon={faHouse} />
+                </button>
                 <div id="history-button">
                     <button id="button-icon" onClick={()=>{
                         if (dropdownRef.current.style.display === "block") { dropdownRef.current.style.display = "none" } else { dropdownRef.current.style.display = "block"; }

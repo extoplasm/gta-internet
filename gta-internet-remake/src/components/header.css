@@ -2,10 +2,14 @@
     margin: 0;
     max-width: 1920px;
     min-width: 1920px;
+
+    /* default colours */
     --defblack: #0c0c0c;
     --deftext: #515151;
     --defgrey: #cccccc;
     --defwhite: #e6e6e6;
+
+    /* accent colours */
     --accwhite: #ffffff;
     --accblack: #2a2a2a;
     --accgrey: #777777;
@@ -72,6 +76,17 @@
 #navbar > #history-button > #dropdown-container > #dropdown button:hover {
     background-color: var(--accgrey);
     color: var(--accwhite)
+}
+
+#navbar > #home-button {
+    border: 2px var(--accgrey) solid;
+    box-shadow: var(--accblack) 0px 1px 1px;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+#navbar > #home-button:hover {
+
 }
 
 input {
