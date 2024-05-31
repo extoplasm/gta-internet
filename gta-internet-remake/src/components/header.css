@@ -38,6 +38,7 @@
     padding: 2px;
 }
 
+/* history buttons */
 #navbar > #history-button > #button-icon {
     border: 2px var(--accgrey) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
@@ -67,6 +68,7 @@
     border: 1px var(--defblack) solid;
 }
 
+/* history links */
 #navbar > #history-button > #dropdown-container > #dropdown button {
     background-color: var(--accwhite);
     width: 25vw;
@@ -82,11 +84,13 @@
     border: 2px var(--accgrey) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
     border-radius: 8px;
-    padding: 3px;
+    padding: 5px 8px;
+    height: min-content;
 }
 
 #navbar > #home-button:hover {
-
+    border: 2px var(--defgrey) solid;
+    border-radius: 8px;
 }
 
 input {
