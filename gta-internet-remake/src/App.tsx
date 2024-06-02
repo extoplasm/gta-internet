@@ -23,13 +23,24 @@ export default function App() {
     setPageHistory([newCurrent, ...updatedHistory])
     console.log(pageHistory, newCurrent )
   }
+
+  const changeCurrentPage = (page: History) => {
+    const updatedHistory = pageHistory.map(p => ({
+      ...p,
+      current: (page ===p),
+    }));
+
+    setPageHistory(updatedHistory)
+    console.log(pageHistory, page)
+  }
   
   return (
     <>
       <Header 
         preview="--- EYEFIND... it's like a series of tubes ---"
-        history={pageHistory}
+        pageHistory={pageHistory}
         addNewPage = {addNewPage}
+        changeCurrentPage = {changeCurrentPage}
       />
 
       <button onClick={() => {addNewPage('www.eyefind.info')}}>go www.eyefind.info</button>

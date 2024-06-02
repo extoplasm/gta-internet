@@ -12,11 +12,12 @@ interface History {
 
 interface Props {
     preview: string;
-    history: Array<History>;
+    pageHistory: Array<History>;
     addNewPage: Function;
+    changeCurrentPage: Function;
 }
 
-export default function header({ preview, history, addNewPage }: Props) {
+export default function header({ preview, pageHistory, addNewPage, changeCurrentPage}: Props) {
     const [searchQuery, setSearchQuery] = useState('')
     const dropdownRef = useRef<any>()
     return (
@@ -27,7 +28,7 @@ export default function header({ preview, history, addNewPage }: Props) {
             <div id="navbar">
                 <div id="navigation-buttons">
                     <button id="back-arrow-button" onClick={() => {
-                        // change page current property
+                        changeCurrentPage(pageHistory[pageHistory.indexOf(pageHistory.filter(p => p.current === true)[0]) + 1])
                     }
                     }>
                     daaaa 
@@ -54,7 +55,7 @@ export default function header({ preview, history, addNewPage }: Props) {
                     </button>
                     <div id="dropdown-container">
                         <div id="dropdown" ref={dropdownRef}>
-                            {history
+                            {pageHistory
                                 .filter((_p,_) => (_ < 10)) // so as to not flood the viewers screen
                                 .map((p,_) => (
                                 <div key={p.id}>
@@ -75,7 +76,7 @@ export default function header({ preview, history, addNewPage }: Props) {
                         id="search-field" 
                         type="text" 
                         value={searchQuery}
-                        placeholder={history[0] ? history[0].name : 'www.eyefind.info'}
+                        placeholder={pageHistory[0] ? pageHistory[0].name : 'www.eyefind.info'}
                         onChange={(e) => setSearchQuery(e.target.value)}
                     />
                     <button id="search-submit" 
