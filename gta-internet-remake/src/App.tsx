@@ -25,10 +25,12 @@ export default function App() {
   }
 
   const changeCurrentPage = (page: History) => {
-    const updatedHistory = pageHistory.map(p => ({
-      ...p,
-      current: (page ===p),
-    }));
+    const updatedHistory = pageHistory.map(p => {
+      if (p===page) {
+        return { ...p, current: true }
+      }
+      return {...p, current: false }
+    });
 
     setPageHistory(updatedHistory)
     console.log(pageHistory, page)
