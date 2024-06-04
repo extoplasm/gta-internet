@@ -6,13 +6,18 @@ gta website recreation in react
     1. - [x] title
     2. - [ ] navbar
         1. - [ ] navigation *// dont worry about this right now*
-            1. - [ ] backwards arrow 
+            1. - [ ] backwards arrow
+               1. - [ ] icons
+               2. - [ ] interactivity
             2. - [ ] forwards arrow
-        2. - [ ] home button *// set page to eyefind.info*
-        3. - [ ] history button
-            1. - [ ] dropdown
+               1. - [ ] icons
+               2. - [ ] interactivity
+        2. - [x] home button *// set page to eyefind.info*
+        3. - [x] history button
+            1. - [x] dropdown
             2. - [x] icons
             3. - [x] list history
+            4. - [ ] interactivity
         4. - [ ] search bar
             1. - [x] input field
             2. - [x] set and update history
