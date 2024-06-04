@@ -35,7 +35,8 @@ export default function header({ preview, pageHistory, addNewPage, changeCurrent
                     </button>
                     <br />
                     <button id="forward-arrow-button" onClick={() => {
-                        // change page current property
+                        console.log(pageHistory.filter(p => p.current === true)[0])
+                        changeCurrentPage(pageHistory[pageHistory.indexOf(pageHistory.filter(p => p.current === true)[0]) - 1])
                     }
                     }>
                     d
