@@ -2,7 +2,7 @@ import './header.css'
 import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
-import { faCaretDown, faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faCaretLeft, faCaretRight, faHouse } from '@fortawesome/free-solid-svg-icons'
 
 interface History {
     id: number;
@@ -31,7 +31,7 @@ export default function header({ preview, pageHistory, addNewPage, changeCurrent
                         changeCurrentPage(pageHistory[pageHistory.indexOf(pageHistory.filter(p => p.current === true)[0]) + 1]) // fix these 
                     }
                     }>
-                    daaaa 
+                        <FontAwesomeIcon icon={faCaretLeft} />
                     </button>
                     <br />
                     <button id="forward-arrow-button" onClick={() => {
@@ -39,7 +39,7 @@ export default function header({ preview, pageHistory, addNewPage, changeCurrent
                         changeCurrentPage(pageHistory[pageHistory.indexOf(pageHistory.filter(p => p.current === true)[0]) - 1]) // fix these
                     }
                     }>
-                    d
+                        <FontAwesomeIcon icon={faCaretRight} />
                     </button>
                 </div>
                 <button id="home-button" onClick={()=> {
