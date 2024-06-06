@@ -12,12 +12,13 @@ interface History {
 
 interface Props {
     preview: string;
+    currentPageIndex: number;
     pageHistory: Array<History>;
     addNewPage: Function;
     changeCurrentPage: Function;
 }
 
-export default function header({ preview, pageHistory, addNewPage, changeCurrentPage}: Props) {
+export default function header({ preview, currentPageIndex, pageHistory, addNewPage, changeCurrentPage}: Props) {
     const [searchQuery, setSearchQuery] = useState('')
     const dropdownRef = useRef<any>()
     return (
@@ -28,14 +29,14 @@ export default function header({ preview, pageHistory, addNewPage, changeCurrent
             <div id="navbar">
                 <div id="navigation-buttons">
                     <button id="back-arrow-button" onClick={() => {
-                        //
+                        changeCurrentPage(pageHistory[currentPageIndex + 1] || pageHistory[currentPageIndex]) // if next page exists switch otherwise stay
                     }
                     }>
                         <FontAwesomeIcon icon={faCaretLeft} />
                     </button>
                     <br />
                     <button id="forward-arrow-button" onClick={() => {
-                        // fix these
+                        changeCurrentPage(pageHistory[currentPageIndex - 1] || pageHistory[currentPageIndex])
                     }
                     }>
                         <FontAwesomeIcon icon={faCaretRight} />

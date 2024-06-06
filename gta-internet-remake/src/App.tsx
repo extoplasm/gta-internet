@@ -25,7 +25,7 @@ export default function App() {
 
   const changeCurrentPage = (page: History) => {
     const updatedHistory = pageHistory.map(p => {
-      if (page && p === page) {
+      if (p === page) {
         return { ...p, current: true }
       }
       return {...p, current: false }
@@ -38,6 +38,7 @@ export default function App() {
     <>
       <Header 
         preview="--- EYEFIND... it's like a series of tubes ---"
+        currentPageIndex={pageHistory.findIndex(p => p.current === true)}
         pageHistory={pageHistory}
         addNewPage = {addNewPage}
         changeCurrentPage = {changeCurrentPage}
