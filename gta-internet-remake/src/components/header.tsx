@@ -28,15 +28,14 @@ export default function header({ preview, pageHistory, addNewPage, changeCurrent
             <div id="navbar">
                 <div id="navigation-buttons">
                     <button id="back-arrow-button" onClick={() => {
-                        changeCurrentPage(pageHistory[pageHistory.indexOf(pageHistory.filter(p => p.current === true)[0]) + 1]) // fix these 
+                        //
                     }
                     }>
                         <FontAwesomeIcon icon={faCaretLeft} />
                     </button>
                     <br />
                     <button id="forward-arrow-button" onClick={() => {
-                        console.log(pageHistory.filter(p => p.current === true)[0])
-                        changeCurrentPage(pageHistory[pageHistory.indexOf(pageHistory.filter(p => p.current === true)[0]) - 1]) // fix these
+                        // fix these
                     }
                     }>
                         <FontAwesomeIcon icon={faCaretRight} />

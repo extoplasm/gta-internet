@@ -25,7 +25,7 @@ export default function App() {
 
   const changeCurrentPage = (page: History) => {
     const updatedHistory = pageHistory.map(p => {
-      if (p === page) {
+      if (page && p === page) {
         return { ...p, current: true }
       }
       return {...p, current: false }
@@ -61,7 +61,7 @@ export default function App() {
 
         and import these just up the top
         */}
-        { pageHistory.filter(p => p.current === true)[0].name }
+        { pageHistory[pageHistory.findIndex(p => p.current === true)].name }
       </div>
     </>
   );
