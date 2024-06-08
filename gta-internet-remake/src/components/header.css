@@ -59,6 +59,22 @@
     padding: 0px 16px;
 }
 
+#navbar > #navigation-buttons > #back-arrow-button:disabled {
+    border: 2px var(--accblack) solid;
+    box-shadow: var(--defblack) 0px 1px 1px;
+    background-color: var(--accgrey);
+    border-radius: 8px 0px 0px 8px;
+    padding: 0px 16px;
+}
+
+#navbar > #navigation-buttons > #forward-arrow-button:disabled {
+    border: 2px var(--defblack) solid;
+    box-shadow: var(--accblack) 0px 1px 1px;
+    background-color: var(--accgrey);
+    border-radius: 0px 8px 8px 0px;
+    padding: 0px 16px;
+}
+
 /* history buttons */
 #navbar > #history-button > #button-icon > * {
     padding: 2px;

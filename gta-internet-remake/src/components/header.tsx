@@ -28,14 +28,18 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
             </div>
             <div id="navbar">
                 <div id="navigation-buttons">
-                    <button id="back-arrow-button" onClick={() => {
+                    <button id="back-arrow-button" 
+                    disabled={!pageHistory[currentPageIndex + 1]}
+                    onClick={() => {
                         changeCurrentPage(pageHistory[currentPageIndex + 1] || pageHistory[currentPageIndex]) // if next page exists switch otherwise stay
                     }
                     }>
                         <FontAwesomeIcon icon={faCaretLeft} />
                     </button>
                     <br />
-                    <button id="forward-arrow-button" onClick={() => {
+                    <button id="forward-arrow-button" 
+                    disabled={!pageHistory[currentPageIndex - 1]}
+                    onClick={() => {
                         changeCurrentPage(pageHistory[currentPageIndex - 1] || pageHistory[currentPageIndex])
                     }
                     }>
@@ -61,7 +65,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                                 .map((p,_) => (
                                 <div key={p.id}>
                                     <button onClick={() => {
-                                        // change page current property
+                                        changeCurrentPage(p)
                                     }}>
                                             {p.name}
                                     </button>
