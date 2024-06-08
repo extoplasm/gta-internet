@@ -3,27 +3,27 @@ gta website recreation in react
 
 # todo:
 1. - [ ] header
-    1. - [x] title
-    2. - [ ] navbar
-        1. - [ ] navigation *// dont worry about this right now*
+    1. - [x] title *// not sure if we need another property for the preview*
+    2. - [x] navbar
+        1. - [x] navigation
             1. - [x] backwards arrow
                1. - [x] icons
                2. - [x] interactivity
             2. - [x] forwards arrow
                1. - [x] icons
                2. - [x] interactivity
-            3. - [ ] styles + responsivity *// change color when no next/previous page*
+            3. - [x] styles + responsivity *// change color when no next/previous page*
         2. - [x] home button *// set page to eyefind.info*
         3. - [x] history button
             1. - [x] dropdown
             2. - [x] icons
             3. - [x] list history
-            4. - [ ] interactivity
-        4. - [ ] search bar
+            4. - [x] interactivity
+        4. - [x] search bar
             1. - [x] input field
             2. - [x] set and update history
-            3. - [ ] close window *// im pretty sure this just closes the app on the phone, just make this a button that does nothing*
-            4. - [ ] icons
+            3. - [x] close window 
+            4. - [x] icons
 2. - [ ] app
     1. - [ ] pages *// all pages in the gta v version not online (have not included exclusively gta online pages) (understand the pages grow as the story progresses, dont worry about this, just include as much as possible, also all pages should be viewed from the perspective of michael (if you really want to, ill probably make a branch for the other characters viewpoints))*
         1. - [ ] www.eyefind.info
