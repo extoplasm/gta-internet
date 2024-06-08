@@ -2,7 +2,7 @@ import './header.css'
 import { useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
-import { faCaretDown, faCaretLeft, faCaretRight, faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown, faCaretLeft, faCaretRight, faHouse, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 interface History {
     id: number;
@@ -92,9 +92,9 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                             }
                         }}
                     />
-                    <div id="close window"> 
-                    {/* in game this closes the window, but here just do nothing, but make responsive as well*/}
-                    </div>
+                    <button id="close-window"> 
+                        <FontAwesomeIcon icon={faXmark} /> 
+                    </button>
                 </div>
             </div>
         </>

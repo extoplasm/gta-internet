@@ -35,6 +35,15 @@
     justify-content: space-around;
 }
 
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    opacity: 1;
+    color: var(--deftext)
+}
+
 /* navigation buttons */
 #navbar > #navigation-buttons {
     display: flex;
@@ -60,8 +69,8 @@
 }
 
 #navbar > #navigation-buttons > #back-arrow-button:disabled {
-    border: 2px var(--accblack) solid;
-    box-shadow: var(--defblack) 0px 1px 1px;
+    border: 2px var(--defblack) solid;
+    box-shadow: var(--accblack) 0px 1px 1px;
     background-color: var(--accgrey);
     border-radius: 8px 0px 0px 8px;
     padding: 0px 16px;
@@ -89,7 +98,6 @@
 
 #navbar > #history-button > #button-icon:hover {
     border: 2px var(--defgrey) solid;
-    border-radius: 8px;
 }
 
 #navbar > #history-button > #dropdown-container {
@@ -136,17 +144,31 @@
 }
 
 /* search bar */
-input {
+#search-bar {
+    width: 50%;
+}
+
+#search-bar > #search-field {
     color: var(--deftext);
     text-decoration: none;
     appearance: none;
+    width: 95%;
+    border-radius: 8px 0px 0px 8px;
+    padding: 5px;
 }
 
-input:focus {
-    outline: none;
+#search-bar > #search-field::placeholder {
+    font-size: 1.4em;
 }
 
-::placeholder {
-    opacity: 1;
-    color: var(--deftext)
+#search-bar > #close-window {
+    border: 2px var(--accgrey) solid;
+    box-shadow: var(--accblack) 0px 1px 1px;
+    border-radius: 0px 8px 8px 0px;
+    padding: 4px 8px;
+    height: min-content;
+}
+
+#search-bar > #close-window:hover {
+    border: 2px var(--defgrey) solid;
 }
