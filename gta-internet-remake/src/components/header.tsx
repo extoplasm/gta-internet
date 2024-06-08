@@ -81,20 +81,17 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                         id="search-field" 
                         type="text" 
                         value={searchQuery}
-                        placeholder={pageHistory[0] ? pageHistory[0].name : 'www.eyefind.info'}
+                        placeholder={pageHistory[currentPageIndex].name}
                         onChange={(e) => setSearchQuery(e.target.value)}
+                        onKeyDown={e => {
+                            if (e.key === 'Enter') { 
+                                if(searchQuery.trim()) {
+                                    addNewPage(`www.eyefind.info/search+${searchQuery}`)
+                                    setSearchQuery('')
+                                }
+                            }
+                        }}
                     />
-                    <button id="search-submit" 
-                        onClick={() => {
-                            if(searchQuery.trim()) {
-                                addNewPage(`www.eyefind.info/search+${searchQuery}`)
-                                setSearchQuery('')
-                            }
-                            }
-                        }
-                    > search
-                        {/* search bar icon goes here (from fontawesome)*/}
-                    </button>
                     <div id="close window"> 
                     {/* in game this closes the window, but here just do nothing, but make responsive as well*/}
                     </div>

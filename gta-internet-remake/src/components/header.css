@@ -32,7 +32,7 @@
     border-right: none;
     border-left: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* navigation buttons */
