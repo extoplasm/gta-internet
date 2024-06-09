@@ -86,7 +86,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                         onKeyDown={e => {
                             if (e.key === 'Enter') { 
                                 if(searchQuery.trim()) {
-                                    addNewPage(`www.eyefind.info/search+${searchQuery}`)
+                                    addNewPage(searchQuery)
                                     setSearchQuery('')
                                 }
                             }

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ChaletLondonNineteenSixty;
+  src: url('../../ChaletLondon1960Regular.otf')
+}
+
 :root {
     margin: 0;
     max-width: 1920px;
@@ -159,6 +164,7 @@ input:focus {
 
 #search-bar > #search-field::placeholder {
     font-size: 1.4em;
+    font-family: ChaletLondonNineteenSixty;
 }
 
 #search-bar > #close-window {
