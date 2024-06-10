@@ -63,6 +63,7 @@ input:focus {
 #navbar > #navigation-buttons > #back-arrow-button, #navbar > #navigation-buttons > #forward-arrow-button {
     border: 2px var(--accgrey) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
+    padding: 4px 16px;
     height: fit-content;
 }
 
@@ -74,13 +75,7 @@ input:focus {
     border-radius: 0px 8px 8px 0px;
 }
 
-#navbar > #navigation-buttons > #back-arrow-button:disabled {
-    border: 2px var(--defblack) solid;
-    box-shadow: var(--accblack) 0px 1px 1px;
-    background-color: var(--accgrey);
-}
-
-#navbar > #navigation-buttons > #forward-arrow-button:disabled {
+#navbar > #navigation-buttons > #back-arrow-button:disabled, #navbar > #navigation-buttons > #forward-arrow-button:disabled {
     border: 2px var(--defblack) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
     background-color: var(--accgrey);
@@ -116,7 +111,7 @@ input:focus {
 #navbar > #history-button > #dropdown-container > #dropdown {
     display: none;
     position: absolute;
-    width: 25vw;
+    width: 50vw;
     box-shadow: var(--accblack) 2px 2px 5px;
     z-index: 1;
     background-color: var(--accwhite);
@@ -126,8 +121,8 @@ input:focus {
 /* history links */
 #navbar > #history-button > #dropdown-container > #dropdown button {
     background-color: var(--accwhite);
-    width: 25vw;
-    text-align: left;
+    width: 50vw;
+    text-align: left; 
 }
 
 #navbar > #history-button > #dropdown-container > #dropdown button:hover {
@@ -142,6 +137,7 @@ input:focus {
     border-radius: 8px;
     padding: 4px 8px;
     height: fit-content;
+    margin: 0px 10px;
 }
 
 #navbar > #home-button:hover {
@@ -151,7 +147,8 @@ input:focus {
 
 /* search bar */
 #search-bar {
-    width: 50%;
+    width: 75%;
+    margin: 0px 10px;
 }
 
 #search-bar > #search-field {
@@ -161,7 +158,7 @@ input:focus {
     width: 95%;
     border-radius: 8px 0px 0px 8px;
     box-shadow: var(--accblack) 0px 1px 1px;
-    padding: 5px;
+    padding: 7px 4px;
 }
 
 #search-bar > #search-field::placeholder {
