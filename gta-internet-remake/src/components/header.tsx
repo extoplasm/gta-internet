@@ -36,7 +36,6 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                     }>
                         <FontAwesomeIcon icon={faCaretLeft} />
                     </button>
-                    <br />
                     <button id="forward-arrow-button" 
                     disabled={!pageHistory[currentPageIndex - 1]}
                     onClick={() => {

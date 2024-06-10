@@ -37,7 +37,7 @@
     border-right: none;
     border-left: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 input:focus {
@@ -53,43 +53,44 @@ input:focus {
 #navbar > #navigation-buttons {
     display: flex;
     justify-content: space-between;
+    margin: 0px 10px;
 }
 
 #navbar > #navigation-buttons > #back-arrow-button:hover, #navbar > #navigation-buttons > #forward-arrow-button:hover{
     border: 2px var(--defgrey) solid;
 }
 
-#navbar > #navigation-buttons > #back-arrow-button {
+#navbar > #navigation-buttons > #back-arrow-button, #navbar > #navigation-buttons > #forward-arrow-button {
     border: 2px var(--accgrey) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
+    height: fit-content;
+}
+
+#navbar > #navigation-buttons > #back-arrow-button {
     border-radius: 8px 0px 0px 8px;
-    padding: 0px 16px;
 }
 
 #navbar > #navigation-buttons > #forward-arrow-button {
-    border: 2px var(--accgrey) solid;
-    box-shadow: var(--accblack) 0px 1px 1px;
     border-radius: 0px 8px 8px 0px;
-    padding: 0px 16px;
 }
 
 #navbar > #navigation-buttons > #back-arrow-button:disabled {
     border: 2px var(--defblack) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
     background-color: var(--accgrey);
-    border-radius: 8px 0px 0px 8px;
-    padding: 0px 16px;
 }
 
 #navbar > #navigation-buttons > #forward-arrow-button:disabled {
     border: 2px var(--defblack) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
     background-color: var(--accgrey);
-    border-radius: 0px 8px 8px 0px;
-    padding: 0px 16px;
 }
 
 /* history buttons */
+#navbar > #history-button {
+    margin: 0px 10px;
+}
+
 #navbar > #history-button > #button-icon > * {
     padding: 2px;
 }
@@ -139,8 +140,8 @@ input:focus {
     border: 2px var(--accgrey) solid;
     box-shadow: var(--accblack) 0px 1px 1px;
     border-radius: 8px;
-    padding: 5px 8px;
-    height: min-content;
+    padding: 4px 8px;
+    height: fit-content;
 }
 
 #navbar > #home-button:hover {
@@ -159,6 +160,7 @@ input:focus {
     appearance: none;
     width: 95%;
     border-radius: 8px 0px 0px 8px;
+    box-shadow: var(--accblack) 0px 1px 1px;
     padding: 5px;
 }
 
