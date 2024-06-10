@@ -16,7 +16,7 @@ export default function App() {
 
   const addNewPage = (page : string) => {
     // @ts-expect-error
-    const pagePreview = pageData[page]?.preview
+    const pagePreview = pageData[page]?.preview || <br/>
     const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: page, preview: pagePreview, current: true };
 
     const updatedHistory = pageHistory.map(p => ({
