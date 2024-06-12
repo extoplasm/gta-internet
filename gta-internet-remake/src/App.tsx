@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/header';
+import Page from './components/page';
 import pageData from './assets/pagedata.json'
 
 interface History {
@@ -47,27 +48,10 @@ export default function App() {
         addNewPage = {addNewPage}
         changeCurrentPage = {changeCurrentPage}
       />
-
-      <button onClick={() => {addNewPage('www.eyefind.info')}}>go www.eyefind.info</button>
-
-      <br />
-
-      <button onClick={() => {addNewPage('www.toeshoeusa.com')}}>go to www.toeshoeusa.com</button>
-      <div id="page">
-        {/*if (pageHistory[0].name === 'whatever page') {
-            <WhateverPage props/>
-        } else {
-            <EyefindError/>
-        }
-        
-        btw these should look like this in the folder
-        src/pages/whateverpage 
-        src/pages/eyefind/error 
-
-        and import these just up the top
-        */}
-        { pageHistory[pageHistory.findIndex(p => p.current === true)].name }
-      </div>
+      <Page
+        currentPage = {pageHistory[pageHistory.findIndex(p => p.current === true)].name}
+        addNewPage = {addNewPage}
+      />
     </>
   );
 }
