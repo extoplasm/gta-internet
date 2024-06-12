@@ -16,6 +16,5 @@
 # notes
 when adding new pages, 
 - create a new folder in src/pages with the page name (without www)
-- images and stuff can go into that folder (src/pages/yourwebsite/assets) (src/assets are for general assets)
 
 not sure how to go about multiple pages, currently thinking about if else statment in App.tsx, where if currentpage = something, return something
