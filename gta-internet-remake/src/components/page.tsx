@@ -24,7 +24,7 @@ export default function Header({ currentPage, addNewPage }: Props) {
             <Suspense fallback={<div>Loading...</div>}>
                 <PageComponent />
             </Suspense>
-            {/* will remove these later and the addnewpage prop */}
+            {/* will remove these later and the addnewpage prop ( just for testing only ) */}
             <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
             <button onClick={() => addNewPage('www.toeshoeusa.com')}>go to www.toeshoeusa.com</button>
         </>
