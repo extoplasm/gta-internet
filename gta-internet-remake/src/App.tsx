@@ -18,7 +18,9 @@ export default function App() {
   const addNewPage = (page : string) => {
     // @ts-expect-error
     const pagePreview = pageData[page]?.preview || <br/> // get page preview if exists in pagedata, else return <br>
-    const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: page, preview: pagePreview, current: true }; // init new page
+    // @ts-expect-error
+    const pageName = pageData[page] ? page : 'www.eyefind.info/error'
+    const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: pageName, preview: pagePreview, current: true }; // init new page
 
     const updatedHistory = pageHistory.map(p => ({
       ...p,
