@@ -1,31 +1,31 @@
 import { Suspense, lazy } from 'react';
-
-const Eyefind = lazy(() => import('../pages/eyefind/eyefind'));
+import pageData from '../assets/pagedata.json'; // Import the JSON file
 
 interface Props {
-    currentPage: string
-    addNewPage: Function
+    currentPage: string;
+    addNewPage: Function;
 }
 
-export default function Page({ currentPage, addNewPage }: Props) {
-    // basically load for each page
+// dynamically import component
+const loadComponent = (componentName: string) => {
+    return lazy(() => import(/* @vite-ignore */`../pages/${componentName}`));
+};
+
+const componentMapping = Object.fromEntries(
+    Object.entries(pageData).map(([key, value]) => [key, loadComponent(value.component)])
+);
+
+
+export default function Header({ currentPage, addNewPage }: Props) {
+    const PageComponent = componentMapping[currentPage] 
+    console.log(currentPage)
     return (
         <>
-            {currentPage === 'www.eyefind.info' && (
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Eyefind />
-                </Suspense>
-            )}
-            {currentPage === 'www.toeshoeusa.com' && (
-                <button onClick={() => {addNewPage('www.eyefind.info')}}>go to www.eyefind.info</button>
-            )}
-            {currentPage !== 'www.eyefind.info' && currentPage !== 'www.toeshoeusa.com' && (
-                <>
-                    <button onClick={() => {addNewPage('www.eyefind.info')}}>go www.eyefind.info</button>
-                    <br />
-                    <button onClick={() => {addNewPage('www.toeshoeusa.com')}}>go to www.toeshoeusa.com</button>
-                </>
-            )}
+            <Suspense fallback={<div>Loading...</div>}>
+                <PageComponent />
+            </Suspense>
+            <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
+            <button onClick={() => addNewPage('www.toeshoeusa.com')}>go to www.toeshoeusa.com</button>
         </>
     );
 }
