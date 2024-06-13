@@ -29,7 +29,7 @@ gta website recreation in react
     1. - [ ] pages *// all pages in the gta v version not online (have not included exclusively gta online pages) (understand the pages grow as the story progresses, dont worry about this, just include as much as possible, also all pages should be viewed from the perspective of michael (if you really want to, ill probably make a branch for the other characters viewpoints))*
         1. - [ ] www.eyefind.info
             1. - [ ] home
-            2. - [ ] search
+            2. - [ ] search *// probably nah*
             3. - [ ] error
         2. - [ ] www.elitastravel.com
         3. - [ ] www.legendarymotorsport.net
