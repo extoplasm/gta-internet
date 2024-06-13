@@ -1,5 +1,4 @@
 import { Suspense, lazy } from 'react';
-import './page.css';
 
 const Eyefind = lazy(() => import('../pages/eyefind/eyefind'));
 
@@ -9,6 +8,7 @@ interface Props {
 }
 
 export default function Page({ currentPage, addNewPage }: Props) {
+    // basically load for each page
     return (
         <>
             {currentPage === 'www.eyefind.info' && (
