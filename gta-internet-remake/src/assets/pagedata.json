@@ -1,8 +1,14 @@
 {
     "www.eyefind.info": {
-        "preview": "--- EYEFIND... it's like a series of tubes ---"
+        "preview": "--- EYEFIND... it's like a series of tubes ---",
+        "component": "eyefind/eyefind"
     },
     "www.toeshoeusa.com": {
-        "preview": false
+        "preview": false,
+        "component": "toeshoeusa/toeshoeusa"
+    },
+    "www.eyefind.info/error": {
+        "preview": "--- i forgot ---",
+        "component": "eyefind/error"
     }
 }
