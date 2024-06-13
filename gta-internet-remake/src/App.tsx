@@ -17,23 +17,23 @@ export default function App() {
 
   const addNewPage = (page : string) => {
     // @ts-expect-error
-    const pagePreview = pageData[page]?.preview || <br/>
-    const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: page, preview: pagePreview, current: true };
+    const pagePreview = pageData[page]?.preview || <br/> // get page preview if exists in pagedata, else return <br>
+    const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: page, preview: pagePreview, current: true }; // init new page
 
     const updatedHistory = pageHistory.map(p => ({
       ...p,
       current: false,
-    }));
+    })); // make previous history all false
 
     setPageHistory([newCurrent, ...updatedHistory])
   }
 
   const changeCurrentPage = (page: History) => {
-    const updatedHistory = pageHistory.map(p => {
-      if (p === page) {
-        return { ...p, current: true }
+    const updatedHistory = pageHistory.map(p => { // loop through pageHistory
+      if (p === page) { // if page is the page we want
+        return { ...p, current: true } // set updatedHistory with p.current as true
       }
-      return {...p, current: false }
+      return {...p, current: false } // else p.current is false
     });
 
     setPageHistory(updatedHistory)

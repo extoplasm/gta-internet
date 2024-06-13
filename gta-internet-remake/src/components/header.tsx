@@ -39,7 +39,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                     <button id="forward-arrow-button" 
                     disabled={!pageHistory[currentPageIndex - 1]}
                     onClick={() => {
-                        changeCurrentPage(pageHistory[currentPageIndex - 1] || pageHistory[currentPageIndex])
+                        changeCurrentPage(pageHistory[currentPageIndex - 1] || pageHistory[currentPageIndex]) // if next page exists switch otherwise stay
                     }
                     }>
                         <FontAwesomeIcon icon={faCaretRight} />
@@ -52,7 +52,8 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                 </button>
                 <div id="history-button">
                     <button id="button-icon" onClick={()=>{
-                        if (dropdownRef.current.style.display === "block") { dropdownRef.current.style.display = "none" } else { dropdownRef.current.style.display = "block"; }
+                        if (dropdownRef.current.style.display === "block") { dropdownRef.current.style.display = "none" } else { dropdownRef.current.style.display = "block"; } 
+                        // if already open close otherwise open
                     }}>
                         <FontAwesomeIcon icon={faClock} />
                         <FontAwesomeIcon icon={faCaretDown} />
@@ -83,7 +84,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                         placeholder={pageHistory[currentPageIndex].name}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         onKeyDown={e => {
-                            if (e.key === 'Enter') { 
+                            if (e.key === 'Enter') { // apparently there's no search icon LOL
                                 if(searchQuery.trim()) {
                                     addNewPage(searchQuery)
                                     setSearchQuery('')
