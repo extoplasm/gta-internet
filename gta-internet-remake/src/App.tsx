@@ -11,7 +11,6 @@ interface History {
   current: boolean;
 }
 
-
 export default function App() {
   const [pageHistory, setPageHistory] = useState<History[]>([{id: 1, name: 'www.eyefind.info', preview: "--- EYEFIND... it's like a series of tubes ---", current: true}])
 

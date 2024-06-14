@@ -6,9 +6,5 @@
     "www.toeshoeusa.com": {
         "preview": false,
         "component": "toeshoeusa/toeshoeusa"
-    },
-    "www.eyefind.info/error": {
-        "preview": "--- i forgot ---",
-        "component": "eyefind/error"
     }
 }
