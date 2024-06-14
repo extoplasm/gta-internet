@@ -79,7 +79,8 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                 <div id="search-bar">
                     <input 
                         id="search-field" 
-                        type="text" 
+                        type="text"
+                        autoComplete="off"
                         value={searchQuery}
                         placeholder={pageHistory[currentPageIndex].name}
                         onChange={(e) => setSearchQuery(e.target.value)}
