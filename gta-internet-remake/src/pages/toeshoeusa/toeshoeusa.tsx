@@ -1,7 +1,14 @@
-export default function Page() {
+import './toeshoeusa.css'
+
+interface Props {
+    currentPage: string;
+    addNewPage: Function;
+}
+
+export default function Page({ currentPage, addNewPage }: Props) {
     return (
         <>
-            toeshoeusa
+            {currentPage}
         </>
     );
 }
