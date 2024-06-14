@@ -126,8 +126,6 @@ all sites are in the xbox aspect ratio of width 1920px (max-width and min-width 
 
 I DO NOT WANT TO MAKE RESPONSIVE UI!!!!!!!!!!!!!
 
-currently not planning to make functional search bar, which returns relevant search items, only return website if entered url i mean (if some wizard were to come and help i would be very appreciative)
-
 all ui is based off michael's phone
 
 this has been done before btw: https://github.com/nicxes/gtavweb, although not to full extent and using php
