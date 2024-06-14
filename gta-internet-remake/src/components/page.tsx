@@ -21,13 +21,15 @@ const getOriginPage = (page : string) => {
     return match ? match[0] : ''; 
 }
 
-export default function Header({ currentPage, addNewPage }: Props) {
+export default function Page({ currentPage, addNewPage }: Props) {
     const PageComponent = componentMapping[getOriginPage(currentPage)]
-    console.log(getOriginPage(currentPage))
     return (
         <>
             <Suspense fallback={<div>Loading...</div>}>
-                <PageComponent />
+                <PageComponent 
+                    currentPage = {currentPage}
+                    addNewPage = {addNewPage}
+                />
             </Suspense>
             {/* will remove these later and the addnewpage prop ( just for testing only ) */}
             <br/> 
