@@ -15,7 +15,6 @@ const getQueryString = (page: string) => {
 }
 
 export default function Page({ currentPage, addNewPage }: Props) {
-    console.log(getQueryString(currentPage))
     return (
         <>
             {

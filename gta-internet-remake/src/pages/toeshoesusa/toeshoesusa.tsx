@@ -15,7 +15,6 @@ const getQueryString = (page: string) => {
 }
 
 export default function Page({ currentPage, addNewPage }: Props) {
-    console.log(getQueryString(currentPage))
     return (
         <>
             {
@@ -33,7 +32,7 @@ function MainPage({ addNewPage }: pageProps) {
         <>
             <img src="../../toeshoesusa-logo.png" alt="logo" />
             <br/>
-            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
+            <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
         </>
     )
 }
