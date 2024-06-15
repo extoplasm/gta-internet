@@ -15,10 +15,10 @@ const componentMapping = Object.fromEntries(
     Object.entries(pageData).map(([key, value]) => [key, loadComponent(value.component)])
 );
 
-
+// only get origin page (eg. www.eyefind.info instead of www.eyefind.info/error)
 const getOriginPage = (page : string) => {
     let match = page.match(/^[^\/]+/); // match up to the first / to get whichever page we need
-    return match ? match[0] : ''; 
+    return match ? match[0] : '';
 }
 
 export default function Page({ currentPage, addNewPage }: Props) {
