@@ -1,4 +1,4 @@
-import './eyefind.css'
+import './toeshoesusa.css'
 
 interface Props {
     currentPage: string;
@@ -19,12 +19,6 @@ export default function Page({ currentPage, addNewPage }: Props) {
     return (
         <>
             {
-                getQueryString(currentPage) === 'error' &&
-                <ErrorPage
-                    addNewPage={addNewPage}
-                />
-            }
-            {
                 getQueryString(currentPage) === '' &&
                 <MainPage
                     addNewPage={addNewPage}
@@ -34,22 +28,10 @@ export default function Page({ currentPage, addNewPage }: Props) {
     );
 }
 
-function ErrorPage({ addNewPage }: pageProps) {
-    return (
-        <>
-            error
-            <br/> 
-            <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
-            <br/>
-            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
-        </>
-    )
-}
-
 function MainPage({ addNewPage }: pageProps) {
     return (
         <>
-            <img src="../../eyefind-logo.png" alt="logo" />
+            <img src="../../toeshoesusa-logo.png" alt="logo" />
             <br/>
             <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
         </>

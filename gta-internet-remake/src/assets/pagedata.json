@@ -3,8 +3,8 @@
         "preview": "--- EYEFIND... it's like a series of tubes ---",
         "component": "eyefind/eyefind"
     },
-    "www.toeshoeusa.com": {
+    "www.toeshoesusa.com": {
         "preview": false,
-        "component": "toeshoeusa/toeshoeusa"
+        "component": "toeshoesusa/toeshoesusa"
     }
 }
