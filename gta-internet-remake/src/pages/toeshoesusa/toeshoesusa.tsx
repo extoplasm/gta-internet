@@ -30,7 +30,7 @@ export default function Page({ currentPage, addNewPage }: Props) {
 function MainPage({ addNewPage }: pageProps) {
     return (
         <>
-            <img src="../../toeshoesusa-logo.png" alt="logo" />
+            <img src="../../toeshoesusabanner.png" alt="logo" />
             <br/>
             <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
         </>
