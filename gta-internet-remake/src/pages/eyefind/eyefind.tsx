@@ -33,6 +33,14 @@ export default function Page({ currentPage, addNewPage }: Props) {
     );
 }
 
+function Navbar({ addNewPage }: pageProps) {
+    return (
+        <>
+            <img src="../../eyefind-logo.png" alt="logo" />
+        </>
+    )
+}
+
 function ErrorPage({ addNewPage }: pageProps) {
     return (
         <>
@@ -48,8 +56,9 @@ function ErrorPage({ addNewPage }: pageProps) {
 function MainPage({ addNewPage }: pageProps) {
     return (
         <>
-            <img src="../../eyefind-logo.png" alt="logo" />
-            <br/>
+            <Navbar 
+                addNewPage={addNewPage}
+            />
             <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
         </>
     )
