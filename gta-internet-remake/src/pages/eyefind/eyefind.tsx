@@ -9,26 +9,26 @@ interface pageProps {
     addNewPage: Function;
 }
 
+// dynamically import component
+const subPages = {
+    '': MainPage,
+    'error': ErrorPage,
+}
+
 const getQueryString = (page: string) => {
     let match = page.match(/[^/]*\/(.*)/); // match up to the first / to get whichever page we need
     return match ? match[1] : '';
 }
 
 export default function Page({ currentPage, addNewPage }: Props) {
-    return (
+    // @ts-expect-error (not sure why this keeps happening)
+    const PageComponent = subPages[getQueryString(currentPage)]
+    return ( 
         <>
-            {
-                getQueryString(currentPage) === 'error' &&
-                <ErrorPage
-                    addNewPage={addNewPage}
-                />
-            }
-            {
-                getQueryString(currentPage) === '' &&
-                <MainPage
-                    addNewPage={addNewPage}
-                />
-            }
+            <PageComponent 
+                currentPage = {currentPage}
+                addNewPage = {addNewPage}
+            />
         </>
     );
 }
