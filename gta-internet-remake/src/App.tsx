@@ -11,6 +11,11 @@ interface History {
   current: boolean;
 }
 
+const getOriginPage = (page : string) => {
+  let match = page.match(/^[^\/]+/); // match up to the first / to get whichever page we need
+  return match ? match[0] : '';
+}
+
 export default function App() {
   const [pageHistory, setPageHistory] = useState<History[]>([{id: 1, name: 'www.eyefind.info', preview: "--- EYEFIND... it's like a series of tubes ---", current: true}])
 
@@ -18,7 +23,7 @@ export default function App() {
     // @ts-expect-error
     const pagePreview = pageData[page]?.preview || <br/> // get page preview if exists in pagedata, else return <br>
     // @ts-expect-error
-    const pageName = pageData[page] ? page : 'www.eyefind.info/error'
+    const pageName = pageData[getOriginPage(page)] ? page : 'www.eyefind.info/error'
     const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: pageName, preview: pagePreview, current: true }; // init new page
 
     const updatedHistory = pageHistory.map(p => ({
