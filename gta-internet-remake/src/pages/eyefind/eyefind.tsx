@@ -48,7 +48,7 @@ function ErrorPage({ addNewPage }: pageProps) {
             <br/> 
             <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
             <br/>
-            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
+            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button> 
         </>
     )
 }
