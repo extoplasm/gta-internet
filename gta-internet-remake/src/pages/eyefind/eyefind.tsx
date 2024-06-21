@@ -37,8 +37,9 @@ function Navbar({ addNewPage }: pageProps) {
     return (
         <>
             <div id="banner">
-                <button onClick={() => addNewPage('www.eyefind.info')}>
-                    <img id="logo" src="../../eyefind-logo.png" alt="logo" />
+                <img id="logo" src="../../eyefind-logo.png" alt="logo" />
+                <button id="random" onClick={() => addNewPage('www.toeshoesusa.com')}>
+                    RANDOM
                 </button>
             </div>
         </>

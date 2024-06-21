@@ -9,6 +9,23 @@
     margin: 0 auto;
 }
 
+/* banner */
 #banner {
-    
+    background-color: #498BC2;
+    border-bottom: #FFBF01 solid 8px;
+}
+
+#banner > #logo {
+    margin: 10px;
+    max-width: 218px;
+    max-height: 92px;
+}
+
+
+#banner > #random {
+    background-color: #057292;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 6px;
+    padding: 15px 50px;
 }
