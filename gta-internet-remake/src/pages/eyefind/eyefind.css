@@ -1,0 +1,14 @@
+@font-face {
+    font-family: ChaletLondonNineteenSixty;
+    src: url('../../ChaletLondon1960Regular.otf')
+}
+
+#root {
+    max-width: 1920px;
+    min-width: 1920px;
+    margin: 0 auto;
+}
+
+#banner {
+    
+}

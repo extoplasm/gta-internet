@@ -36,7 +36,11 @@ export default function Page({ currentPage, addNewPage }: Props) {
 function Navbar({ addNewPage }: pageProps) {
     return (
         <>
-            <img src="../../eyefind-logo.png" alt="logo" />
+            <div id="banner">
+                <button onClick={() => addNewPage('www.eyefind.info')}>
+                    <img id="logo" src="../../eyefind-logo.png" alt="logo" />
+                </button>
+            </div>
         </>
     )
 }
