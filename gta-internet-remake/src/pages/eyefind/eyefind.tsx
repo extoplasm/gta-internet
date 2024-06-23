@@ -1,4 +1,6 @@
 import './eyefind.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 interface Props {
     currentPage: string;
@@ -38,9 +40,20 @@ function Navbar({ addNewPage }: pageProps) {
         <>
             <div id="banner">
                 <img id="logo" src="../../eyefind-logo.png" alt="logo" />
-                <button id="random" onClick={() => addNewPage('www.toeshoesusa.com')}>
-                    RANDOM
-                </button>
+                <div id="pagenav">
+                    <div id="search-bar">
+                        <FontAwesomeIcon icon={faMagnifyingGlass}/>
+                        <input 
+                            id="search-field" 
+                            type="text"
+                            autoComplete="off"
+                            placeholder="Search Eyefind" 
+                        />
+                    </div>
+                    <button id="random" onClick={() => addNewPage('www.toeshoesusa.com')}>
+                        RANDOM
+                    </button>
+                </div>
             </div>
         </>
     )

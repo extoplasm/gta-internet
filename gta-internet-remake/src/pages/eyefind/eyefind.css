@@ -13,6 +13,7 @@
 #banner {
     background-color: #498BC2;
     border-bottom: #FFBF01 solid 8px;
+    padding: 0 15%; 
 }
 
 #banner > #logo {
@@ -21,11 +22,22 @@
     max-height: 92px;
 }
 
+#banner > #pagenav {
+    display: flex;
+    justify-content: space-around;
+}
 
-#banner > #random {
+#banner > #pagenav > #random {
     background-color: #057292;
     color: #fff;
     font-size: 1.1em;
-    border-radius: 6px;
+    border-radius: 6px; 
     padding: 15px 50px;
+}
+
+#banner > #pagenav > #search-bar {
+    background-color: #fff;
+    border: 2px solid grey;
+    padding: 10px;
+    width: 50%;
 }
