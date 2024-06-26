@@ -8,7 +8,7 @@
         }
     },
     "www.toeshoesusa.com": {
-        "preview": "<br/>",
+        "preview": "",
         "component": "toeshoesusa/toeshoesusa",
         "childrenPreviews": {
         }

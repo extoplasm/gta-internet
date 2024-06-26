@@ -24,7 +24,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
     return (
         <>
             <div id="title">
-                {preview}
+                {preview ? preview : <br/>}
             </div>
             <div id="navbar">
                 <div id="navigation-buttons">
