@@ -23,6 +23,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
     const dropdownRef = useRef<any>()
     return (
         <>
+        <div id="header-component">
             <div id="title">
                 {preview ? preview : <br/>}
             </div>
@@ -60,14 +61,14 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                     </button>
                     <div id="dropdown-container">
                         <div id="dropdown" ref={dropdownRef}>
-                            {pageHistory
-                                .filter((_p,_) => (_ < 10)) // so as to not flood the viewers screen
-                                .map((p,_) => (
+                        {pageHistory
+                            .filter((_p,_) => (_ < 10)) // so as to not flood the viewers screen
+                            .map((p,_) => (
                                 <div key={p.id}>
                                     <button onClick={() => {
-                                        changeCurrentPage(p)
+                                    changeCurrentPage(p)
                                     }}>
-                                            {p.name}
+                                        {p.name}
                                     </button>
                                     <br />
                                 </div>
@@ -98,6 +99,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
                     </button>
                 </div>
             </div>
+        </div>
         </>
     );
 }

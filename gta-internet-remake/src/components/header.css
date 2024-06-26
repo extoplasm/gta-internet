@@ -3,177 +3,177 @@
   src: url('../../ChaletLondon1960Regular.otf')
 }
 
-:root {
+#header-component {
     margin: 0;
     max-width: 1920px;
     min-width: 1920px;
 
     /* default colours */
-    --defblack: #0c0c0c;
-    --deftext: #515151;
-    --defgrey: #cccccc;
-    --defwhite: #e6e6e6;
+    --headercomponent-defblack: #0c0c0c;
+    --headercomponent-deftext: #515151;
+    --headercomponent-defgrey: #cccccc;
+    --headercomponent-defwhite: #e6e6e6;
 
     /* accent colours */
-    --accwhite: #ffffff;
-    --accblack: #2a2a2a;
-    --accgrey: #777777;
+    --headercomponent-accwhite: #ffffff;
+    --headercomponent-accblack: #2a2a2a;
+    --headercomponent-accgrey: #777777;
 }
 
 /* general */
-#title {
+#header-component > #title {
     padding-top: 50px;
-    color: var(--deftext);
-    background-color: var(--defblack);
+    color: var(--headercomponent-deftext);
+    background-color: var(--headercomponent-defblack);
     text-align: center;
 }
 
-#navbar {
-    color: var(--deftext);
-    background-color: var(--defwhite);
+#header-component > #navbar {
+    color: var(--headercomponent-deftext);
+    background-color: var(--headercomponent-defwhite);
     padding: 10px 100px;
-    box-shadow: var(--accblack) -5px 1px 10px;
-    border: 3px var(--accgrey) solid;
+    box-shadow: var(--headercomponent-accblack) 0px 1px 10px;
+    border: 3px var(--headercomponent-accgrey) solid;
     border-right: none;
     border-left: none;
     display: flex;
     justify-content: center;
 }
 
-input:focus {
+#header-component input:focus {
     outline: none;
 }
 
-::placeholder {
+#header-component ::placeholder {
     opacity: 1;
-    color: var(--deftext)
+    color: var(--headercomponent-deftext)
 }
 
 /* navigation buttons */
-#navbar > #navigation-buttons {
+#header-component > #navbar > #navigation-buttons {
     display: flex;
     justify-content: space-between;
     margin: 0px 10px;
 }
 
-#navbar > #navigation-buttons > #back-arrow-button:hover, #navbar > #navigation-buttons > #forward-arrow-button:hover{
-    border: 2px var(--defgrey) solid;
+#header-component > #navbar > #navigation-buttons > #back-arrow-button:hover, #header-component > #navbar > #navigation-buttons > #forward-arrow-button:hover{
+    border: 2px var(--headercomponent-defgrey) solid;
 }
 
-#navbar > #navigation-buttons > #back-arrow-button, #navbar > #navigation-buttons > #forward-arrow-button {
-    border: 2px var(--accgrey) solid;
-    box-shadow: var(--accblack) 0px 1px 1px;
+#header-component > #navbar > #navigation-buttons > #back-arrow-button, #header-component > #navbar > #navigation-buttons > #forward-arrow-button {
+    border: 2px var(--headercomponent-accgrey) solid;
+    box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     padding: 4px 16px;
     height: fit-content;
 }
 
-#navbar > #navigation-buttons > #back-arrow-button {
+#header-component > #navbar > #navigation-buttons > #back-arrow-button {
     border-radius: 8px 0px 0px 8px;
 }
 
-#navbar > #navigation-buttons > #forward-arrow-button {
+#header-component > #navbar > #navigation-buttons > #forward-arrow-button {
     border-radius: 0px 8px 8px 0px;
 }
 
-#navbar > #navigation-buttons > #back-arrow-button:disabled, #navbar > #navigation-buttons > #forward-arrow-button:disabled {
-    border: 2px var(--defblack) solid;
-    box-shadow: var(--accblack) 0px 1px 1px;
-    background-color: var(--accgrey);
+#header-component > #navbar > #navigation-buttons > #back-arrow-button:disabled, #header-component > #navbar > #navigation-buttons > #forward-arrow-button:disabled {
+    border: 2px var(--headercomponent-defblack) solid;
+    box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
+    background-color: var(--headercomponent-accgrey);
 }
 
 /* history buttons */
-#navbar > #history-button {
+#header-component > #navbar > #history-button {
     margin: 0px 10px;
 }
 
-#navbar > #history-button > #button-icon > * {
+#header-component > #navbar > #history-button > #button-icon > * {
     padding: 2px;
 }
 
-#navbar > #history-button > #button-icon {
-    border: 2px var(--accgrey) solid;
-    box-shadow: var(--accblack) 0px 1px 1px;
+#header-component > #navbar > #history-button > #button-icon {
+    border: 2px var(--headercomponent-accgrey) solid;
+    box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     border-radius: 8px;
     padding: 3px;
 }
 
-#navbar > #history-button > #button-icon:hover {
-    border: 2px var(--defgrey) solid;
+#header-component > #navbar > #history-button > #button-icon:hover {
+    border: 2px var(--headercomponent-defgrey) solid;
 }
 
-#navbar > #history-button > #dropdown-container {
+#header-component > #navbar > #history-button > #dropdown-container {
     position: relative;
     display: block;
     margin: 5px 0;
-    background-color: var(--accwhite);
+    background-color: var(--headercomponent-accwhite);
 }
 
-#navbar > #history-button > #dropdown-container > #dropdown {
+#header-component > #navbar > #history-button > #dropdown-container > #dropdown {
     display: none;
     position: absolute;
     width: 50vw;
-    box-shadow: var(--accblack) 2px 2px 5px;
+    box-shadow: var(--headercomponent-accblack) 2px 2px 5px;
     z-index: 1;
-    background-color: var(--accwhite);
-    border: 1px var(--defblack) solid;
+    background-color: var(--headercomponent-accwhite);
+    border: 1px var(--headercomponent-defblack) solid;
 }
 
 /* history links */
-#navbar > #history-button > #dropdown-container > #dropdown button {
-    background-color: var(--accwhite);
+#header-component > #navbar > #history-button > #dropdown-container > #dropdown button {
+    background-color: var(--headercomponent-accwhite);
     width: 50vw;
     text-align: left; 
 }
 
-#navbar > #history-button > #dropdown-container > #dropdown button:hover {
-    background-color: var(--accgrey);
-    color: var(--accwhite)
+#header-component > #navbar > #history-button > #dropdown-container > #dropdown button:hover {
+    background-color: var(--headercomponent-accgrey);
+    color: var(--headercomponent-accwhite)
 }
 
 /* home button */
-#navbar > #home-button {
-    border: 2px var(--accgrey) solid;
-    box-shadow: var(--accblack) 0px 1px 1px;
+#header-component > #navbar > #home-button {
+    border: 2px var(--headercomponent-accgrey) solid;
+    box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     border-radius: 8px;
     padding: 4px 8px;
     height: fit-content;
     margin: 0px 10px;
 }
 
-#navbar > #home-button:hover {
-    border: 2px var(--defgrey) solid;
+#header-component > #navbar > #home-button:hover {
+    border: 2px var(--headercomponent-defgrey) solid;
     border-radius: 8px;
 }
 
 /* search bar */
-#navbar > #search-bar {
+#header-component > #navbar > #search-bar {
     width: 75%;
     margin: 0px 10px;
 }
 
-#navbar > #search-bar > #search-field {
-    color: var(--deftext);
+#header-component > #navbar > #search-bar > #search-field {
+    color: var(--headercomponent-deftext);
     text-decoration: none;
     appearance: none;
     width: 95%;
     border-radius: 8px 0px 0px 8px;
-    box-shadow: var(--accblack) 0px 1px 1px;
+    box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     padding: 7px 4px;
 }
 
-#navbar > #search-bar > #search-field::placeholder {
+#header-component > #navbar > #search-bar > #search-field::placeholder {
     font-size: 1.4em;
     font-family: ChaletLondonNineteenSixty;
 }
 
-#navbar > #search-bar > #close-window {
-    border: 2px var(--accgrey) solid;
-    box-shadow: var(--accblack) 0px 1px 1px;
+#header-component > #navbar > #search-bar > #close-window {
+    border: 2px var(--headercomponent-accgrey) solid;
+    box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     border-radius: 0px 8px 8px 0px;
     padding: 4px 8px;
     height: min-content;
 }
 
-#navbar > #search-bar > #close-window:hover {
-    border: 2px var(--defgrey) solid;
+#header-component > #navbar > #search-bar > #close-window:hover {
+    border: 2px var(--headercomponent-defgrey) solid;
 }
