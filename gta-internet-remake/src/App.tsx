@@ -17,7 +17,7 @@ const getOriginPage = (page : string) => {
 }
 
 const getQueryString = (page: string) => {
-  let match = page.match(/[^/]*\/(.*)/); // match up to the first / to get whichever page we need
+  let match = page.match(/[^/]*\/(.*)/); // match after the first / to get whichever page we need
   return match ? match[1] : '';
 }
 
@@ -26,7 +26,7 @@ export default function App() {
 
   const addNewPage = (page : string) => {
     // @ts-expect-error
-    const pageName = pageData[getOriginPage(page)] ? page : 'www.eyefind.info/error'
+    const pageName = getQueryString(page) ? (pageData[getOriginPage(page)].childrenPreviews[getQueryString(page)] ? page : 'www.eyefind.info/error') : (pageData[page] ? page : 'www.eyefind.info/error') 
     // @ts-expect-error
     const pagePreview = getQueryString(pageName) ? pageData[getOriginPage(pageName)].childrenPreviews[getQueryString(pageName)] : pageData[getOriginPage(pageName)].preview
     const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: pageName, preview: pagePreview, current: true }; // init new page
