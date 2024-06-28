@@ -3,31 +3,31 @@
     src: url('../../ChaletLondon1960Regular.otf')
 }
 
-#root {
+:root {
     max-width: 1920px;
     min-width: 1920px;
     margin: 0 auto;
 }
 
 /* banner */
-#banner {
+#eyefind-banner {
     background-color: #498BC2;
     border-bottom: #FFBF01 solid 8px;
     padding: 0 15%; 
 }
 
-#banner > #logo {
+#eyefind-banner > #logo {
     margin: 10px;
     max-width: 218px;
     max-height: 92px;
 }
 
-#banner > #pagenav {
+#eyefind-banner > #pagenav {
     display: flex;
     justify-content: space-around;
 }
 
-#banner > #pagenav > #random {
+#eyefind-banner > #pagenav > #random {
     background-color: #057292;
     color: #fff;
     font-size: 1.1em;
@@ -35,9 +35,13 @@
     padding: 15px 50px;
 }
 
-#banner > #pagenav > #search-bar {
+#eyefind-banner > #pagenav > #search-bar {
     background-color: #fff;
     border: 2px solid grey;
     padding: 10px;
     width: 50%;
+}
+
+#eyefind-banner > #weather > * {
+    color: #fff;
 }

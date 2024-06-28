@@ -38,7 +38,7 @@ export default function Page({ currentPage, addNewPage }: Props) {
 function Navbar({ addNewPage }: pageProps) {
     return (
         <>
-            <div id="banner">
+            <div id="eyefind-banner">
                 <img id="logo" src="../../eyefind-logo.png" alt="logo" />
                 <div id="weather">
                     <p>Rockford Hills</p>
