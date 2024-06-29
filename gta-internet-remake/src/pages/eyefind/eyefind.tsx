@@ -46,11 +46,13 @@ function Navbar({ addNewPage }: pageProps) {
     return (
         <>
             <div id="eyefind-banner">
-                <img id="logo" src="../../eyefind-logo.png" alt="logo" />
-                <div id="weather">
-                    <p>Rockford Hills</p>
-                    <p>Sun</p>
-                    <FontAwesomeIcon icon={faCloud}/>
+                <div id="info">
+                    <img id="logo" src="../../eyefind-logo.png" alt="logo" />
+                    <div id="weather">
+                        <p>Rockford Hills</p>
+                        <p>Sun</p>
+                        <FontAwesomeIcon icon={faCloud}/>
+                    </div>
                 </div>
                 <div id="pagenav">
                     <div id="search-bar">
