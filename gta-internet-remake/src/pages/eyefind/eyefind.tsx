@@ -1,6 +1,7 @@
 import './eyefind.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faCloud } from '@fortawesome/free-solid-svg-icons'
+import pageData from '../../assets/pagedata.json'
 
 interface Props {
     currentPage: string;
@@ -20,6 +21,12 @@ const subPages = {
 const getQueryString = (page: string) => {
     let match = page.match(/[^/]*\/(.*)/); // match up to the first / to get whichever page we need
     return match ? match[1] : '';
+}
+
+const getRandomPage = (data : object) => {
+    const pages = Object.keys(data);
+    const randomIndex = Math.floor(Math.random() * pages.length)
+    return pages[randomIndex]
 }
 
 export default function Page({ currentPage, addNewPage }: Props) {
@@ -55,7 +62,9 @@ function Navbar({ addNewPage }: pageProps) {
                             placeholder="Search Eyefind" 
                         />
                     </div>
-                    <button id="random" onClick={() => addNewPage('www.toeshoesusa.com')}>
+                    <button id="random" onClick={() => 
+                        addNewPage(getRandomPage(pageData))
+                    }>
                         RANDOM
                     </button>
                 </div>
