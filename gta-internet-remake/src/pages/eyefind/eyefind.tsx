@@ -1,6 +1,6 @@
 import './eyefind.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faCloud } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faSun } from '@fortawesome/free-solid-svg-icons'
 import pageData from '../../assets/pagedata.json'
 
 interface Props {
@@ -51,7 +51,8 @@ function Navbar({ addNewPage }: pageProps) {
                     <div className="weather">
                         <p>Rockford Hills</p>
                         <p>Sun</p>
-                        <FontAwesomeIcon icon={faCloud}/>
+                        <div className="separator"></div>
+                        <FontAwesomeIcon icon={faSun}/>
                     </div>
                 </div>
                 <div className="page-nav">

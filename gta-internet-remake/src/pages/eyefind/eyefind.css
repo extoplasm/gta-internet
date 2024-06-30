@@ -27,13 +27,37 @@
 .eyefind-banner {
     background-color: var(--eyefind-defblue);
     border-bottom: var(--eyefind-accyellow) solid 8px;
-    padding: 0 15%; 
+    padding: 0 15%;
 }
 
-.eyefind-banner .info > .logo {
+.eyefind-banner > .info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.eyefind-banner > .info > .logo {
     margin: 10px;
     max-width: 218px;
     max-height: 92px;
+}
+
+.eyefind-banner > .info > .weather {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.eyefind-banner > .info > .weather > .separator {
+    background-color: white;
+    width: 2px;
+    border-radius: 2px;
+    height: 50%;
+}
+
+.eyefind-banner > .info > .weather > svg {
+    color: #ffb300;
+    font-size: 3em;
 }
 
 .eyefind-banner > .info > .weather > * {
@@ -43,6 +67,7 @@
 .eyefind-banner > .page-nav {
     display: flex;
     justify-content: space-around;
+    margin: 10px;
 }
 
 .eyefind-banner > .page-nav > .random {
@@ -53,7 +78,6 @@
     padding: 15px 50px;
 }
 
-/* search bar */
 .eyefind-banner > .page-nav > .search-bar {
     width: 75%;
     margin: 0px 10px;
