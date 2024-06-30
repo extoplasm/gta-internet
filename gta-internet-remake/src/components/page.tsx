@@ -25,12 +25,14 @@ export default function Page({ currentPage, addNewPage }: Props) {
     const PageComponent = componentMapping[getOriginPage(currentPage)]
     return (
         <>
-            <Suspense fallback={<div>Loading...</div>}>
-                <PageComponent 
-                    currentPage = {currentPage}
-                    addNewPage = {addNewPage}
-                />
-            </Suspense>
+            <div id="page-container">
+                <Suspense fallback={<div>Loading...</div>}>
+                    <PageComponent 
+                        currentPage = {currentPage}
+                        addNewPage = {addNewPage}
+                    />
+                </Suspense>
+            </div>
         </>
     );
 }

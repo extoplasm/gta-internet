@@ -23,7 +23,7 @@ export default function header({ preview, currentPageIndex, pageHistory, addNewP
     const dropdownRef = useRef<any>()
     return (
         <>
-        <div className="header-component">
+        <div id="header-component">
             <div className="title">
                 {preview ? preview : <br/>}
             </div>
