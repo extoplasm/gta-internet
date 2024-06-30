@@ -2,7 +2,7 @@
 gta website recreation in react
 
 # todo:
-1. - [ ] header
+1. - [x] header
     1. - [x] title *// not sure if we need another property for the preview*
     2. - [x] navbar
         1. - [x] navigation
@@ -24,7 +24,7 @@ gta website recreation in react
             2. - [x] set and update history
             3. - [x] close window 
             4. - [x] icons
-    3. - [ ] STYLES!!!
+    3. - [x] STYLES!!!
 2. - [ ] app
     1. - [ ] pages *// all pages in the gta v version not online (have not included exclusively gta online pages) (understand the pages grow as the story progresses, dont worry about this, just include as much as possible, also all pages should be viewed from the perspective of michael (if you really want to, ill probably make a branch for the other characters viewpoints))*
         1. - [ ] www.eyefind.info
