@@ -20,32 +20,32 @@
 }
 
 /* banner */
-#eyefind-banner input:focus {
+.eyefind-banner input:focus {
     outline: none;
 }
 
-#eyefind-banner {
+.eyefind-banner {
     background-color: var(--eyefind-defblue);
     border-bottom: var(--eyefind-accyellow) solid 8px;
     padding: 0 15%; 
 }
 
-#eyefind-banner #info > #logo {
+.eyefind-banner .info > .logo {
     margin: 10px;
     max-width: 218px;
     max-height: 92px;
 }
 
-#eyefind-banner > #info > #weather > * {
+.eyefind-banner > .info > .weather > * {
     color: var(--eyefind-defwhite);
 }
 
-#eyefind-banner > #page-nav {
+.eyefind-banner > .page-nav {
     display: flex;
     justify-content: space-around;
 }
 
-#eyefind-banner > #page-nav > #random {
+.eyefind-banner > .page-nav > .random {
     background-color: var(--eyefind-accdarkblue);
     color: var(--eyefind-defwhite);
     font-size: 1.1em;
@@ -54,7 +54,7 @@
 }
 
 /* search bar */
-#eyefind-banner > #page-nav > #search-bar {
+.eyefind-banner > .page-nav > .search-bar {
     width: 75%;
     margin: 0px 10px;
     background-color: white; 
@@ -63,7 +63,7 @@
     color: var(--eyefind-defblue) 
 }
 
-#eyefind-banner > #page-nav > #search-bar > #search-field {
+.eyefind-banner > .page-nav > .search-bar > .search-field {
     color: var(--eyefind-deftext);
     text-decoration: none;
     appearance: none;
@@ -72,7 +72,7 @@
     padding: 7px 4px;
 }
 
-#eyefind-banner > #page-nav > #search-bar > #search-field::placeholder {
+.eyefind-banner > .page-nav > .search-bar > .search-field::placeholder {
     font-size: 1.4em;
     color: var(--eyefind-defblack);
     opacity: 1;

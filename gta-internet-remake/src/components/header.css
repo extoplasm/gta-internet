@@ -3,7 +3,7 @@
   src: url('../../ChaletLondon1960Regular.otf')
 }
 
-#header-component {
+.header-component {
     margin: 0;
     max-width: 1920px;
     min-width: 1920px;
@@ -21,14 +21,14 @@
 }
 
 /* general */
-#header-component > #title {
+.header-component > .title {
     padding-top: 50px;
     color: var(--headercomponent-deftext);
     background-color: var(--headercomponent-defblack);
     text-align: center;
 }
 
-#header-component > #navbar {
+.header-component > .navbar {
     color: var(--headercomponent-deftext);
     background-color: var(--headercomponent-defwhite);
     padding: 10px 100px;
@@ -40,70 +40,70 @@
     justify-content: center;
 }
 
-#header-component input:focus {
+.header-component input:focus {
     outline: none;
 }
 
 /* navigation buttons */
-#header-component > #navbar > #navigation-buttons {
+.header-component > .navbar > .navigation-buttons {
     display: flex;
     justify-content: space-between;
     margin: 0px 10px;
 }
 
-#header-component > #navbar > #navigation-buttons > #back-arrow-button:hover, #header-component > #navbar > #navigation-buttons > #forward-arrow-button:hover{
+.header-component > .navbar > .navigation-buttons > .back-arrow-button:hover, .header-component > .navbar > .navigation-buttons > .forward-arrow-button:hover{
     border: 2px var(--headercomponent-defgrey) solid;
 }
 
-#header-component > #navbar > #navigation-buttons > #back-arrow-button, #header-component > #navbar > #navigation-buttons > #forward-arrow-button {
+.header-component > .navbar > .navigation-buttons > .back-arrow-button, .header-component > .navbar > .navigation-buttons > .forward-arrow-button {
     border: 2px var(--headercomponent-accgrey) solid;
     box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     padding: 4px 16px;
     height: fit-content;
 }
 
-#header-component > #navbar > #navigation-buttons > #back-arrow-button {
+.header-component > .navbar > .navigation-buttons > .back-arrow-button {
     border-radius: 8px 0px 0px 8px;
 }
 
-#header-component > #navbar > #navigation-buttons > #forward-arrow-button {
+.header-component > .navbar > .navigation-buttons > .forward-arrow-button {
     border-radius: 0px 8px 8px 0px;
 }
 
-#header-component > #navbar > #navigation-buttons > #back-arrow-button:disabled, #header-component > #navbar > #navigation-buttons > #forward-arrow-button:disabled {
+.header-component > .navbar > .navigation-buttons > .back-arrow-button:disabled, .header-component > .navbar > .navigation-buttons > .forward-arrow-button:disabled {
     border: 2px var(--headercomponent-defblack) solid;
     box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     background-color: var(--headercomponent-accgrey);
 }
 
 /* history buttons */
-#header-component > #navbar > #history-button {
+.header-component > .navbar > .history-button {
     margin: 0px 10px;
 }
 
-#header-component > #navbar > #history-button > #button-icon > * {
+.header-component > .navbar > .history-button > .button-icon > * {
     padding: 2px;
 }
 
-#header-component > #navbar > #history-button > #button-icon {
+.header-component > .navbar > .history-button > .button-icon {
     border: 2px var(--headercomponent-accgrey) solid;
     box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     border-radius: 8px;
     padding: 3px;
 }
 
-#header-component > #navbar > #history-button > #button-icon:hover {
+.header-component > .navbar > .history-button > .button-icon:hover {
     border: 2px var(--headercomponent-defgrey) solid;
 }
 
-#header-component > #navbar > #history-button > #dropdown-container {
+.header-component > .navbar > .history-button > .dropdown-container {
     position: relative;
     display: block;
     margin: 5px 0;
     background-color: var(--headercomponent-accwhite);
 }
 
-#header-component > #navbar > #history-button > #dropdown-container > #dropdown {
+.header-component > .navbar > .history-button > .dropdown-container > .dropdown {
     display: none;
     position: absolute;
     width: 50vw;
@@ -114,19 +114,19 @@
 }
 
 /* history links */
-#header-component > #navbar > #history-button > #dropdown-container > #dropdown button {
+.header-component > .navbar > .history-button > .dropdown-container > .dropdown button {
     background-color: var(--headercomponent-accwhite);
     width: 50vw;
     text-align: left; 
 }
 
-#header-component > #navbar > #history-button > #dropdown-container > #dropdown button:hover {
+.header-component > .navbar > .history-button > .dropdown-container > .dropdown button:hover {
     background-color: var(--headercomponent-accgrey);
     color: var(--headercomponent-accwhite)
 }
 
 /* home button */
-#header-component > #navbar > #home-button {
+.header-component > .navbar > .home-button {
     border: 2px var(--headercomponent-accgrey) solid;
     box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     border-radius: 8px;
@@ -135,18 +135,18 @@
     margin: 0px 10px;
 }
 
-#header-component > #navbar > #home-button:hover {
+.header-component > .navbar > .home-button:hover {
     border: 2px var(--headercomponent-defgrey) solid;
     border-radius: 8px;
 }
 
 /* search bar */
-#header-component > #navbar > #search-bar {
+.header-component > .navbar > .search-bar {
     width: 75%;
     margin: 0px 10px;
 }
 
-#header-component > #navbar > #search-bar > #search-field {
+.header-component > .navbar > .search-bar > .search-field {
     color: var(--headercomponent-deftext);
     text-decoration: none;
     appearance: none;
@@ -156,14 +156,14 @@
     padding: 7px 4px;
 }
 
-#header-component > #navbar > #search-bar > #search-field::placeholder {
+.header-component > .navbar > .search-bar > .search-field::placeholder {
     font-size: 1.4em;
     font-family: ChaletLondonNineteenSixty;
     opacity: 1;
     color: var(--headercomponent-deftext);
 }
 
-#header-component > #navbar > #search-bar > #close-window {
+.header-component > .navbar > .search-bar > .close-window {
     border: 2px var(--headercomponent-accgrey) solid;
     box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     border-radius: 0px 8px 8px 0px;
@@ -171,6 +171,6 @@
     height: min-content;
 }
 
-#header-component > #navbar > #search-bar > #close-window:hover {
+.header-component > .navbar > .search-bar > .close-window:hover {
     border: 2px var(--headercomponent-defgrey) solid;
 }

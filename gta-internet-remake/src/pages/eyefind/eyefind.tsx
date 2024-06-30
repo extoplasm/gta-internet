@@ -45,26 +45,26 @@ export default function Page({ currentPage, addNewPage }: Props) {
 function Navbar({ addNewPage }: pageProps) {
     return (
         <>
-            <div id="eyefind-banner">
-                <div id="info">
-                    <img id="logo" src="../../eyefind-logo.png" alt="logo" />
-                    <div id="weather">
+            <div className="eyefind-banner">
+                <div className="info">
+                    <img className="logo" src="../../eyefind-logo.png" alt="logo" />
+                    <div className="weather">
                         <p>Rockford Hills</p>
                         <p>Sun</p>
                         <FontAwesomeIcon icon={faCloud}/>
                     </div>
                 </div>
-                <div id="page-nav">
-                    <div id="search-bar">
+                <div className="page-nav">
+                    <div className="search-bar">
                         <FontAwesomeIcon icon={faMagnifyingGlass}/>
                         <input 
-                            id="search-field" 
+                            className="search-field" 
                             type="text"
                             autoComplete="off"
                             placeholder="Search Eyefind" 
                         />
                     </div>
-                    <button id="random" onClick={() => 
+                    <button className="random" onClick={() => 
                         addNewPage(getRandomPage(pageData))
                     }>
                         RANDOM
