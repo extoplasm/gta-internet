@@ -54,7 +54,7 @@ function Navbar({ addNewPage }: pageProps) {
                         <FontAwesomeIcon icon={faCloud}/>
                     </div>
                 </div>
-                <div id="pagenav">
+                <div id="page-nav">
                     <div id="search-bar">
                         <FontAwesomeIcon icon={faMagnifyingGlass}/>
                         <input 

@@ -7,41 +7,74 @@
     max-width: 1920px;
     min-width: 1920px;
     margin: 0 auto;
+
+    /* default colours */
+    --eyefind-defblue: #498BC2;
+    --eyefind-defwhite: #fff;
+    --eyefind-defblack: #000;
+    --eyefind-deftext: #1f1f1f;
+
+    /* accent colours */
+    --eyefind-accdarkblue: #057292;
+    --eyefind-accyellow: #FFBF01;
 }
 
 /* banner */
+#eyefind-banner input:focus {
+    outline: none;
+}
+
 #eyefind-banner {
-    background-color: #498BC2;
-    border-bottom: #FFBF01 solid 8px;
+    background-color: var(--eyefind-defblue);
+    border-bottom: var(--eyefind-accyellow) solid 8px;
     padding: 0 15%; 
 }
 
-#eyefind-banner > #logo {
+#eyefind-banner #info > #logo {
     margin: 10px;
     max-width: 218px;
     max-height: 92px;
 }
 
-#eyefind-banner > #pagenav {
+#eyefind-banner > #info > #weather > * {
+    color: var(--eyefind-defwhite);
+}
+
+#eyefind-banner > #page-nav {
     display: flex;
     justify-content: space-around;
 }
 
-#eyefind-banner > #pagenav > #random {
-    background-color: #057292;
-    color: #fff;
+#eyefind-banner > #page-nav > #random {
+    background-color: var(--eyefind-accdarkblue);
+    color: var(--eyefind-defwhite);
     font-size: 1.1em;
     border-radius: 6px; 
     padding: 15px 50px;
 }
 
-#eyefind-banner > #pagenav > #search-bar {
-    background-color: #fff;
-    border: 2px solid grey;
+/* search bar */
+#eyefind-banner > #page-nav > #search-bar {
+    width: 75%;
+    margin: 0px 10px;
+    background-color: white; 
+    border-radius: 2px;
     padding: 10px;
-    width: 50%;
+    color: var(--eyefind-defblue) 
 }
 
-#eyefind-banner > #weather > * {
-    color: #fff;
+#eyefind-banner > #page-nav > #search-bar > #search-field {
+    color: var(--eyefind-deftext);
+    text-decoration: none;
+    appearance: none;
+    border: none;
+    width: 75%;
+    padding: 7px 4px;
+}
+
+#eyefind-banner > #page-nav > #search-bar > #search-field::placeholder {
+    font-size: 1.4em;
+    color: var(--eyefind-defblack);
+    opacity: 1;
+    font-family: ChaletLondonNineteenSixty;
 }

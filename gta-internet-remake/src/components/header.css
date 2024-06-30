@@ -44,11 +44,6 @@
     outline: none;
 }
 
-#header-component ::placeholder {
-    opacity: 1;
-    color: var(--headercomponent-deftext)
-}
-
 /* navigation buttons */
 #header-component > #navbar > #navigation-buttons {
     display: flex;
@@ -164,6 +159,8 @@
 #header-component > #navbar > #search-bar > #search-field::placeholder {
     font-size: 1.4em;
     font-family: ChaletLondonNineteenSixty;
+    opacity: 1;
+    color: var(--headercomponent-deftext);
 }
 
 #header-component > #navbar > #search-bar > #close-window {
