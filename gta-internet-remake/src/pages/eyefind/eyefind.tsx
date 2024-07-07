@@ -29,6 +29,13 @@ const getRandomPage = (data : object) => {
     return pages[randomIndex]
 }
 
+const getCurrentDay = () => {
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const curr = new Date;
+
+    return days[curr.getDay()]
+}
+
 export default function Page({ currentPage, addNewPage }: Props) {
     // @ts-expect-error (not sure why this keeps happening)
     const PageComponent = subPages[getQueryString(currentPage)]
@@ -51,7 +58,7 @@ function Navbar({ addNewPage }: pageProps) {
                     <div className="weather">
                         <div className="weather-text">
                             <p>Rockford Hills</p>
-                            <p>{}</p>
+                            <p>{getCurrentDay()}</p>
                         </div>
                         <div className="weather-icon">
                             <FontAwesomeIcon icon={faSun}/>
