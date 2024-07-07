@@ -49,10 +49,13 @@ function Navbar({ addNewPage }: pageProps) {
                 <div className="info">
                     <img className="logo" src="../../eyefind-logo.png" alt="logo" />
                     <div className="weather">
-                        <p>Rockford Hills</p>
-                        <p>Sun</p>
-                        <div className="separator"></div>
-                        <FontAwesomeIcon icon={faSun}/>
+                        <div className="weather-text">
+                            <p>Rockford Hills</p>
+                            <p>Sun</p>
+                        </div>
+                        <div className="weather-icon">
+                            <FontAwesomeIcon icon={faSun}/>
+                        </div>
                     </div>
                 </div>
                 <div className="page-nav">

@@ -37,30 +37,28 @@
 }
 
 .eyefind-banner > .info > .logo {
-    margin: 10px;
+    margin: 10px 20px;
     max-width: 218px;
     max-height: 92px;
 }
 
 .eyefind-banner > .info > .weather {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px 0px;
 }
 
-.eyefind-banner > .info > .weather > .separator {
-    background-color: white;
-    width: 2px;
-    border-radius: 2px;
-    height: 50%;
+.eyefind-banner > .info > .weather > .weather-text {
+    text-align: right;
 }
 
-.eyefind-banner > .info > .weather > svg {
+.eyefind-banner > .info > .weather > .weather-icon > svg {
     color: #ffb300;
-    font-size: 3em;
+    font-size: 4em;
+    margin: 10px 40px;
 }
 
-.eyefind-banner > .info > .weather > * {
+.eyefind-banner > .info > .weather {
     color: var(--eyefind-defwhite);
 }
 
