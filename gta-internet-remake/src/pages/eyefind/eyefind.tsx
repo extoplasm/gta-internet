@@ -51,7 +51,7 @@ function Navbar({ addNewPage }: pageProps) {
                     <div className="weather">
                         <div className="weather-text">
                             <p>Rockford Hills</p>
-                            <p>Sun</p>
+                            <p>{}</p>
                         </div>
                         <div className="weather-icon">
                             <FontAwesomeIcon icon={faSun}/>

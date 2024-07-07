@@ -37,7 +37,7 @@
 }
 
 .eyefind-banner > .info > .logo {
-    margin: 10px 20px;
+    margin: 20px;
     max-width: 218px;
     max-height: 92px;
 }
@@ -45,11 +45,20 @@
 .eyefind-banner > .info > .weather {
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-rows: 92px;
     margin: 20px 0px;
 }
 
 .eyefind-banner > .info > .weather > .weather-text {
     text-align: right;
+    margin: 10px;
+}
+
+.eyefind-banner > .info > .weather > .weather-text > p {
+    margin: 10px;
+    &:nth-child(2) {
+        font-size: 1.5em;
+    }
 }
 
 .eyefind-banner > .info > .weather > .weather-icon > svg {
@@ -77,10 +86,10 @@
 }
 
 .eyefind-banner > .page-nav > .search-bar {
-    width: 75%;
+    width: 80%;
     margin: 0px 10px;
     background-color: white; 
-    border-radius: 2px;
+    border-radius: 6px;
     padding: 10px;
     color: var(--eyefind-defblue) 
 }
