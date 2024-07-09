@@ -81,6 +81,13 @@ function Navbar({ addNewPage }: pageProps) {
                         RANDOM
                     </button>
                 </div>
+                <div className="page-categories">
+                    <div className="media-and-entertainment"></div>
+                    <div className="food-and-drink"></div>
+                    <div className="money-and-services"></div>
+                    <div className="travel-and-transport"></div>
+                    <div className="fashion-and-health"></div>
+                </div>
             </div>
         </>
     )
