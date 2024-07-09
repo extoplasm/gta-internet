@@ -59,7 +59,7 @@
 .eyefind-banner > .info > .weather > .weather-text > p {
     margin: 0;
     &:nth-child(2) {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 
@@ -75,25 +75,29 @@
 
 .eyefind-banner > .page-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 10px;
 }
 
 .eyefind-banner > .page-nav > .random {
     background-color: var(--eyefind-accdarkblue);
     color: var(--eyefind-defwhite);
-    font-size: 1.1em;
-    border-radius: 6px; 
-    padding: 15px 50px;
+    font-size: 1.5em;
+    border-radius: 6px;
+    padding: 10px 70px;
 }
 
 .eyefind-banner > .page-nav > .search-bar {
-    width: 80%;
-    margin: 0px 10px;
+    width: 75%;
     background-color: white; 
     border-radius: 6px;
     padding: 10px;
     color: var(--eyefind-defblue) 
+}
+
+.eyefind-banner > .page-nav > .search-bar > svg {
+    margin: 0px 10px;
+    font-size: 1.5em;
 }
 
 .eyefind-banner > .page-nav > .search-bar > .search-field {
@@ -101,12 +105,11 @@
     text-decoration: none;
     appearance: none;
     border: none;
-    width: 75%;
     padding: 7px 4px;
 }
 
 .eyefind-banner > .page-nav > .search-bar > .search-field::placeholder {
-    font-size: 1.4em;
+    font-size: 2em;
     color: var(--eyefind-defblack);
     opacity: 1;
     font-family: ChaletLondonNineteenSixty;
