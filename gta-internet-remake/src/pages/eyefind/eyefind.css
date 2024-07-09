@@ -38,29 +38,30 @@
 
 .eyefind-banner > .info > .logo {
     margin: 20px;
-    max-width: 218px;
-    max-height: 92px;
+    max-width: 327px;
+    max-height: 139px;
 }
 
 .eyefind-banner > .info > .weather {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 92px;
-    margin: 20px 0px;
+    margin: 50px 0px;
 }
 
 .eyefind-banner > .info > .weather > .weather-text {
     text-align: right;
-    margin: 10px;
+    border-right: 3px solid white;
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
 .eyefind-banner > .info > .weather > .weather-text > p {
-    margin: 10px;
+    margin: 0;
     &:nth-child(2) {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 }
-
 
 .eyefind-banner > .info > .weather > .weather-icon > svg {
     color: #ffb300;
