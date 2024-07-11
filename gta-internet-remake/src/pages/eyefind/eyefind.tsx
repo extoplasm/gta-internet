@@ -1,6 +1,6 @@
 import './eyefind.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faSun } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faSun, faMobileButton } from '@fortawesome/free-solid-svg-icons'
 import pageData from '../../assets/pagedata.json'
 
 interface Props {
@@ -30,7 +30,7 @@ const getRandomPage = (data : object) => {
 }
 
 const getCurrentDay = () => {
-    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
     const curr = new Date;
 
     return days[curr.getDay()]
@@ -81,13 +81,24 @@ function Navbar({ addNewPage }: pageProps) {
                         RANDOM
                     </button>
                 </div>
-                <div className="page-categories">
-                    <div className="media-and-entertainment"></div>
-                    <div className="food-and-drink"></div>
-                    <div className="money-and-services"></div>
-                    <div className="travel-and-transport"></div>
-                    <div className="fashion-and-health"></div>
-                </div>
+            </div>
+            <div className="page-categories">
+                    <div className="media">
+                        <FontAwesomeIcon icon={faMobileButton}/>
+                        <p>MEDIA AND ENTERTAINMENT</p>
+                    </div>
+                    <div className="food">
+                        <p>FOOD AND DRINK</p>
+                    </div>
+                    <div className="money">
+                        <p>MONEY AND SERVICES</p>
+                    </div>
+                    <div className="travel">
+                        <p>TRAVEL AND TRANSPORT</p>
+                    </div>
+                    <div className="fashion">
+                        <p>FASHION AND HEALTH</p>
+                    </div>
             </div>
         </>
     )
