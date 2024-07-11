@@ -52,37 +52,38 @@ export default function Page({ currentPage, addNewPage }: Props) {
 function Navbar({ addNewPage }: pageProps) {
     return (
         <>
-            <div className="eyefind-banner">
-                <div className="info">
-                    <img className="logo" src="../../eyefind-logo.png" alt="logo" />
-                    <div className="weather">
-                        <div className="weather-text">
-                            <p>Rockford Hills</p>
-                            <p>{getCurrentDay()}</p>
-                        </div>
-                        <div className="weather-icon">
-                            <FontAwesomeIcon icon={faSun}/>
+            <div id="eyefind-navbar">
+                <div className="banner">
+                    <div className="info">
+                        <img className="logo" src="../../eyefind-logo.png" alt="logo" />
+                        <div className="weather">
+                            <div className="weather-text">
+                                <p>Rockford Hills</p>
+                                <p>{getCurrentDay()}</p>
+                            </div>
+                            <div className="weather-icon">
+                                <FontAwesomeIcon icon={faSun}/>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="page-nav">
-                    <div className="search-bar">
-                        <FontAwesomeIcon icon={faMagnifyingGlass}/>
-                        <input 
-                            className="search-field" 
-                            type="text"
-                            autoComplete="off"
-                            placeholder="Search Eyefind" 
-                        />
+                    <div className="page-nav">
+                        <div className="search-bar">
+                            <FontAwesomeIcon icon={faMagnifyingGlass}/>
+                            <input 
+                                className="search-field" 
+                                type="text"
+                                autoComplete="off"
+                                placeholder="Search Eyefind" 
+                            />
+                        </div>
+                        <button className="random" onClick={() => 
+                            addNewPage(getRandomPage(pageData))
+                        }>
+                            RANDOM
+                        </button>
                     </div>
-                    <button className="random" onClick={() => 
-                        addNewPage(getRandomPage(pageData))
-                    }>
-                        RANDOM
-                    </button>
                 </div>
-            </div>
-            <div className="page-categories">
+                <div className="page-categories">
                     <div className="media">
                         <FontAwesomeIcon icon={faMobileButton}/>
                         <p>MEDIA AND ENTERTAINMENT</p>
@@ -99,7 +100,8 @@ function Navbar({ addNewPage }: pageProps) {
                     <div className="fashion">
                         <p>FASHION AND HEALTH</p>
                     </div>
-            </div>
+                </div>
+            </div>  
         </>
     )
 }
