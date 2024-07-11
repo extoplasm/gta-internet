@@ -52,12 +52,13 @@
 .eyefind-banner > .info > .weather > .weather-text {
     text-align: right;
     border-right: 3px solid white;
+    margin: 10px 0px;
     display: grid;
     grid-template-rows: auto auto;
 }
 
 .eyefind-banner > .info > .weather > .weather-text > p {
-    margin: 0;
+    margin: 5px 20px;
     &:nth-child(2) {
         font-size: 1.5em;
     }
