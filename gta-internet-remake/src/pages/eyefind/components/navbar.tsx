@@ -55,26 +55,36 @@ export default function Navbar({ addNewPage }: pageProps) {
                     </div>
                 </div>
                 <div className="page-categories">
-                    <div className="media">
+                    <button onClick={() => 
+                        addNewPage('www.eyefind.info/search+media and entertainment')
+                    }>
                         <FontAwesomeIcon icon={faMobileButton}/>
                         <p>MEDIA AND <br/> ENTERTAINMENT</p> 
-                    </div>
-                    <div className="food">
+                    </button>
+                    <button onClick={() => 
+                        addNewPage('www.eyefind.info/search+food and drink')
+                    }>
                         <FontAwesomeIcon icon={faBurger}/>
                         <p>FOOD <br/> AND DRINK</p>
-                    </div>
-                    <div className="money">
+                    </button>
+                    <button onClick={() => 
+                        addNewPage('www.eyefind.info/search+money and services')
+                    }>
                         <FontAwesomeIcon icon={faSackDollar}/>
-                        <p>MONEY <br/> AND SERVICES</p>
-                    </div>
-                    <div className="travel">
+                        <p>MONEY <br/> AND SERVICES</p> 
+                    </button>
+                    <button onClick={() => 
+                        addNewPage('www.eyefind.info/search+travel and transport')
+                    }>
                         <FontAwesomeIcon icon={faPlane}/>
                         <p>TRAVEL <br/> AND TRANSPORT</p>
-                    </div>
-                    <div className="fashion">
+                    </button>
+                    <button onClick={() => 
+                        addNewPage('www.eyefind.info/search+fashion and health')
+                    }>
                         <FontAwesomeIcon icon={faBagShopping}/>
                         <p>FASHION <br/> AND HEALTH</p>
-                    </div>
+                    </button>
                 </div>
             </div>  
         </>
