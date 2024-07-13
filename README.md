@@ -28,9 +28,14 @@ gta website recreation in react
 2. - [ ] app
     1. - [ ] pages *// all pages in the gta v version not online (have not included exclusively gta online pages) (understand the pages grow as the story progresses, dont worry about this, just include as much as possible, also all pages should be viewed from the perspective of michael (if you really want to, ill probably make a branch for the other characters viewpoints))*
         1. - [ ] www.eyefind.info
-            1. - [ ] home
-            2. - [ ] search *// probably nah*
-            3. - [ ] error
+            1. - [x] navbar
+                1. - [x] banner
+                2. - [x] page categories
+                3. - [x] styles
+            2. - [ ] search
+                1. - [ ] page categories
+                    1. - [ ] page lists
+            3. - [ ] main page
         2. - [ ] www.elitastravel.com
         3. - [ ] www.legendarymotorsport.net
         4. - [ ] www.southernsanandreassuperautos.com
@@ -127,5 +132,7 @@ all sites are in the xbox aspect ratio of width 1920px (max-width and min-width 
 I DO NOT WANT TO MAKE RESPONSIVE UI!!!!!!!!!!!!!
 
 all ui is based off michael's phone
+
+icons from https://fontawesome.com/, will not be exact match, but try your best, custom made icons may be added though.
 
 this has been done before btw: https://github.com/nicxes/gtavweb, although not to full extent and using php
