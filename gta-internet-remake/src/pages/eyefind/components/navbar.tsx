@@ -26,7 +26,7 @@ export default function Navbar({ addNewPage }: pageProps) {
             <div id="eyefind-navbar">
                 <div className="banner">
                     <div className="info">
-                        <img className="logo" src="../../eyefind-logo.png" alt="logo" />
+                        <img className="logo" src="../../pages/eyefind/eyefind-logo.png" alt="logo" />
                         <div className="weather">
                             <div className="weather-text">
                                 <p>Rockford Hills</p>
