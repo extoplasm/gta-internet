@@ -57,23 +57,23 @@ export default function Navbar({ addNewPage }: pageProps) {
                 <div className="page-categories">
                     <div className="media">
                         <FontAwesomeIcon icon={faMobileButton}/>
-                        <p>MEDIA AND ENTERTAINMENT</p>
+                        <p>MEDIA AND <br/> ENTERTAINMENT</p> 
                     </div>
                     <div className="food">
                         <FontAwesomeIcon icon={faBurger}/>
-                        <p>FOOD AND DRINK</p>
+                        <p>FOOD <br/> AND DRINK</p>
                     </div>
                     <div className="money">
                         <FontAwesomeIcon icon={faSackDollar}/>
-                        <p>MONEY AND SERVICES</p>
+                        <p>MONEY <br/> AND SERVICES</p>
                     </div>
                     <div className="travel">
                         <FontAwesomeIcon icon={faPlane}/>
-                        <p>TRAVEL AND TRANSPORT</p>
+                        <p>TRAVEL <br/> AND TRANSPORT</p>
                     </div>
                     <div className="fashion">
                         <FontAwesomeIcon icon={faBagShopping}/>
-                        <p>FASHION AND HEALTH</p>
+                        <p>FASHION <br/> AND HEALTH</p>
                     </div>
                 </div>
             </div>  
