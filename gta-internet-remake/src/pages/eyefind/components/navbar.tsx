@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faSun, faMobileButton, faBurger, faSackDollar, faPlane, faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import pageData from '../../../assets/pagedata.json'
 
-interface pageProps {
+interface componentProps {
     addNewPage: Function;
 }
 
@@ -20,7 +20,7 @@ const getCurrentDay = () => {
     return days[curr.getDay()]
 }
 
-export default function Navbar({ addNewPage }: pageProps) {
+export default function Navbar({ addNewPage }: componentProps) {
     return (
         <>
             <div id="eyefind-navbar">

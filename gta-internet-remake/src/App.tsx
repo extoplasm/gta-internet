@@ -17,7 +17,7 @@ const getOriginPage = (page : string) => {
 }
 
 const getQueryString = (page: string) => {
-  let match = page.match(/[^/]*\/(.*)/); // match after the first / to get whichever page we need
+  let match = page.match(/[^/]*\/([^+]*)/); // capture after first / and before + (eyefind.info/search+"query") to return search only
   return match ? match[1] : '';
 }
 

@@ -6,19 +6,21 @@ interface Props {
     addNewPage: Function;
 }
 
-interface pageProps {
-    addNewPage: Function;
-}
-
 // dynamically import component
 const subPages = {
     '': MainPage,
     'error': ErrorPage,
+    'search': SearchPage,
 }
 
 const getQueryString = (page: string) => {
-    let match = page.match(/[^/]*\/(.*)/); // match up to the first / to get whichever page we need
+    let match = page.match(/[^/]*\/([^+]*)/); // capture after first / and before + (eyefind.info/search+"query") to return search only
     return match ? match[1] : '';
+}
+
+const getSearchQuery = (page: string) => {
+    let match = page.match(/(?<=\+)(.*)/); // returns anything after +
+    return match ? match[0] : '';
 }
 
 export default function Page({ currentPage, addNewPage }: Props) {
@@ -34,7 +36,7 @@ export default function Page({ currentPage, addNewPage }: Props) {
     );
 }
 
-function ErrorPage({ addNewPage }: pageProps) {
+function ErrorPage({ currentPage, addNewPage }: Props) {
     return (
         <>
             error
@@ -46,12 +48,24 @@ function ErrorPage({ addNewPage }: pageProps) {
     )
 }
 
-function MainPage({ addNewPage }: pageProps) {
+function MainPage({ currentPage, addNewPage }: Props) {
     return (
         <>
             <Navbar 
                 addNewPage={addNewPage}
             />
+            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
+        </>
+    )
+}
+
+function SearchPage({ currentPage, addNewPage }: Props) {
+    return (
+        <>
+            <Navbar
+                addNewPage={addNewPage}
+            />
+            <p>{getSearchQuery(currentPage)}</p>
             <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
         </>
     )
