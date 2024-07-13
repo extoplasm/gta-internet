@@ -1,6 +1,6 @@
 import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass, faSun, faMobileButton } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faSun, faMobileButton, faBurger, faSackDollar, faPlane, faBagShopping } from '@fortawesome/free-solid-svg-icons'
 import pageData from '../../../assets/pagedata.json'
 
 interface pageProps {
@@ -60,15 +60,19 @@ export default function Navbar({ addNewPage }: pageProps) {
                         <p>MEDIA AND ENTERTAINMENT</p>
                     </div>
                     <div className="food">
+                        <FontAwesomeIcon icon={faBurger}/>
                         <p>FOOD AND DRINK</p>
                     </div>
                     <div className="money">
+                        <FontAwesomeIcon icon={faSackDollar}/>
                         <p>MONEY AND SERVICES</p>
                     </div>
                     <div className="travel">
+                        <FontAwesomeIcon icon={faPlane}/>
                         <p>TRAVEL AND TRANSPORT</p>
                     </div>
                     <div className="fashion">
+                        <FontAwesomeIcon icon={faBagShopping}/>
                         <p>FASHION AND HEALTH</p>
                     </div>
                 </div>
