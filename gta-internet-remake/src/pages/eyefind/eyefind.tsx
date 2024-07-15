@@ -39,7 +39,7 @@ export default function Page({ currentPage, addNewPage }: Props) {
 function ErrorPage({ currentPage, addNewPage }: Props) {
     return (
         <>
-            error
+            {currentPage}
             <br/> 
             <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
             <br/>
@@ -54,6 +54,7 @@ function MainPage({ currentPage, addNewPage }: Props) {
             <Navbar 
                 addNewPage={addNewPage}
             />
+            {currentPage}
             <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
         </>
     )
@@ -67,6 +68,9 @@ function SearchPage({ currentPage, addNewPage }: Props) {
             />
             <div className="page-content">
                 <h1>Results for: {getSearchQuery(currentPage).toUpperCase()}</h1>
+                {
+                    // maybe should componentise this
+                }
                 <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
             </div>
         </>
