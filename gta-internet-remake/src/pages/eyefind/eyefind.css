@@ -12,9 +12,15 @@
     --eyefind-defblue: #498BC2;
     --eyefind-defwhite: #fff;
     --eyefind-defblack: #000;
-    --eyefind-deftext: #1f1f1f;
+    --eyefind-deftext: #515151;
 
     /* accent colours */
     --eyefind-accdarkblue: #057292;
     --eyefind-accyellow: #FFBF01;
+}
+
+.page-content {
+    color: var(--eyefind-deftext);
+    width: 1440px;
+    margin: auto;
 }

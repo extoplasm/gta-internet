@@ -12,7 +12,7 @@
     --eyefind-defblue: #498BC2;
     --eyefind-defwhite: #fff;
     --eyefind-defblack: #000;
-    --eyefind-deftext: #1f1f1f;
+    --eyefind-deftext: #515151;
     --eyefind-defgrey: #dedede;
 
     /* accent colours */
@@ -103,7 +103,7 @@
 }
 
 #eyefind-navbar > .banner > .page-nav > .search-bar > .search-field {
-    color: var(--eyefind-deftext);
+    color: var(--eyefind-defblack);
     text-decoration: none;
     appearance: none;
     border: none;

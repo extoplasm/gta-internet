@@ -65,8 +65,10 @@ function SearchPage({ currentPage, addNewPage }: Props) {
             <Navbar
                 addNewPage={addNewPage}
             />
-            <p>{getSearchQuery(currentPage)}</p>
-            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
+            <div className="page-content">
+                <h1>Results for: {getSearchQuery(currentPage).toUpperCase()}</h1>
+                <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
+            </div>
         </>
     )
 }
