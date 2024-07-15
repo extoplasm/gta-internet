@@ -34,8 +34,10 @@ gta website recreation in react
                 3. - [x] styles
             2. - [ ] search
                 1. - [ ] page categories
-                    1. - [ ] page lists
+                    1. - [ ] page lists *// maybe componentise these*
             3. - [ ] main page
+			4. - [ ] error page
+				1. - [ ] random image + text
         2. - [ ] www.elitastravel.com
         3. - [ ] www.legendarymotorsport.net
         4. - [ ] www.southernsanandreassuperautos.com
@@ -136,3 +138,5 @@ all ui is based off michael's phone
 icons from https://fontawesome.com/, will not be exact match, but try your best, custom made icons may be added though.
 
 this has been done before btw: https://github.com/nicxes/gtavweb, although not to full extent and using php
+
+will work on uploading captures of websites from in game
