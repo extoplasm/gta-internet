@@ -1,0 +1,25 @@
+@font-face {
+    font-family: ChaletLondonNineteenSixty;
+    src: url('../../ChaletLondon1960Regular.otf')
+}
+
+:root {
+    max-width: 1920px;
+    min-width: 1920px;
+    margin: 0 auto;
+
+    /* default colours */
+
+    /* accent colours */
+}
+
+#toeshoesusa > .page-content {
+    width: 1440px;
+    margin: auto;
+	text-align: center;
+}
+
+#toeshoesusa > .page-content > .banner > img {
+	max-width: 1440px;
+	max-height: 640px;
+}
