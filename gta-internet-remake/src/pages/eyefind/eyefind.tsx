@@ -28,10 +28,12 @@ export default function Page({ currentPage, addNewPage }: Props) {
     const PageComponent = subPages[getQueryString(currentPage)]
     return ( 
         <>
-            <PageComponent 
-                currentPage = {currentPage}
-                addNewPage = {addNewPage}
-            />
+			<div id="eyefind">
+				<PageComponent 
+					currentPage = {currentPage}
+					addNewPage = {addNewPage}
+				/>
+			</div>
         </>
     );
 }
@@ -39,12 +41,14 @@ export default function Page({ currentPage, addNewPage }: Props) {
 function ErrorPage({ currentPage, addNewPage }: Props) {
     return (
         <>
-            {currentPage}
-            <br/> 
-            <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
-            <br/>
-            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button> 
-        </>
+			<div className="page-content">
+				{currentPage}
+				<br/> 
+				<button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
+				<br/>
+				<button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button> 
+			</div>
+		</>
     )
 }
 
@@ -54,9 +58,11 @@ function MainPage({ currentPage, addNewPage }: Props) {
             <Navbar 
                 addNewPage={addNewPage}
             />
-            {currentPage}
-            <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
-        </>
+			<div className="page-content">
+				{currentPage}
+				<button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
+			</div>	
+		</>
     )
 }
 

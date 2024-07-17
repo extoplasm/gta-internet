@@ -19,7 +19,7 @@
     --eyefind-accyellow: #FFBF01;
 }
 
-.page-content {
+#eyefind > .page-content {
     color: var(--eyefind-deftext);
     width: 1440px;
     margin: auto;
