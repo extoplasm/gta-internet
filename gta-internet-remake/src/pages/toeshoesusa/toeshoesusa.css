@@ -1,16 +1,17 @@
-@font-face {
-    font-family: ChaletLondonNineteenSixty;
-    src: url('../../ChaletLondon1960Regular.otf')
-}
-
 :root {
     max-width: 1920px;
     min-width: 1920px;
     margin: 0 auto;
 
     /* default colours */
+    --toeshoesusa-deftext: #382605;
 
     /* accent colours */
+    --toeshoesusa-accentorange: #ff6200;
+}
+
+#toeshoesusa {
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #toeshoesusa > .page-content {
@@ -22,4 +23,11 @@
 #toeshoesusa > .page-content > .banner > img {
 	max-width: 1440px;
 	max-height: 640px;
+}
+
+/* text */
+#toeshoesusa > .page-content > .info > .accented-text {
+    color: var(--toeshoesusa-accentorange);
+    font-weight: bold;
+    font-size: 1.2em;
 }
