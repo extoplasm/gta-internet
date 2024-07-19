@@ -12,6 +12,10 @@
         ""
     ],
     "fashion and health": [
-        "www.toeshoesusa.com"
+        {
+            "url": "www.toeshoesusa.com",
+            "description": "toe shoes for real",
+            "imagesrc": "../../../pages/toeshoesusa/toeshoesbanner2.png"
+        }
     ]
 }

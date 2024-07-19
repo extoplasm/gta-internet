@@ -1,8 +1,21 @@
 import './searchlist.css'
+import categoryData from '../../../assets/pagecategories.json'
 
 interface componentProps {
     query: string;
     addNewPage: Function;
+}
+
+interface category {
+    url: string;
+    description: string;
+    imagesrc: string;
+}
+
+const returnPageList = (category: string): Array<category> => {
+    if (category === 'random') return [{url: "www.toeshoesusa.com", description: "bruh", imagesrc:"bruh"}]
+    // @ts-expect-error
+    return categoryData[category];
 }
 
 export default function SearchList({ query, addNewPage }: componentProps) {
@@ -14,11 +27,16 @@ export default function SearchList({ query, addNewPage }: componentProps) {
                         Results for: {query.toUpperCase()}
                     </h2>
                     <div className="page-list">
-                        <button className="page" onClick={() => {addNewPage('www.toeshoesusa.com')}}>
-                            <img src="../../../pages/toeshoesusa/toeshoesbanner2.png" alt="placeholder banner" />
-                            <p className="page-url">www.toeshoesusa.com</p>
-                            <p className="page-summary">toe shoes for real</p>
-                        </button>
+                        {returnPageList(query)
+                            .map((e,_) => (
+                                <button className="page" 
+                                        key={_}
+                                        onClick={() => addNewPage(e.url)}>
+                                    <img src={e.imagesrc} alt={e.url} />
+                                    <p>{e.description}</p>
+                                </button>
+                            )
+                        )}
                     </div>
                 </div>
             </div>
