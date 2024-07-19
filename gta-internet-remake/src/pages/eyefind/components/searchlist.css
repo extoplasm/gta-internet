@@ -1,5 +1,6 @@
-#search-results > .page-list > .page {
-    background-color: var(--eyefind-defgrey)
+#search-results > .page-list {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto;
 }
 
 #search-results > .page-list > .page > img {

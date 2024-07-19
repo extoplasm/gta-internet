@@ -101,7 +101,6 @@
     padding: 0px 300px;
     border-bottom: 1px solid var(--eyefind-accgrey);
     display: grid;
-    background-color: var(--eyefind-defgrey);
     grid-template-columns: auto auto auto auto auto;
 }
 
