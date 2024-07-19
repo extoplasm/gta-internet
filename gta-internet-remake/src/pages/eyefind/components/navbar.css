@@ -11,6 +11,7 @@
     --eyefind-defgrey: #dedede;
 
     /* accent colours */
+    --eyefind-accgrey: #b4b4b4;
     --eyefind-accdarkblue: #057292;
     --eyefind-accyellow: #FFBF01;
 }
@@ -116,8 +117,9 @@
 #eyefind-navbar > .page-categories {
     margin: auto;
     padding: 0px 300px;
-    border-bottom: 1px solid var(--eyefind-defgrey);
+    border-bottom: 1px solid var(--eyefind-accgrey);
     display: grid;
+    background-color: var(--eyefind-defgrey);
     grid-template-columns: auto auto auto auto auto;
 }
 
@@ -136,6 +138,6 @@
         margin: 0;
     }
     &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5) {
-        border-left: 1px solid var(--eyefind-defgrey);
+        border-left: 1px solid var(--eyefind-accgrey);
     }
 } 
