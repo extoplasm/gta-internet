@@ -1,8 +1,3 @@
-@font-face {
-    font-family: ChaletLondonNineteenSixty;
-    src: url('../../ChaletLondon1960Regular.otf')
-}
-
 :root {
     max-width: 1920px;
     min-width: 1920px;
@@ -13,14 +8,9 @@
     --eyefind-defwhite: #fff;
     --eyefind-defblack: #000;
     --eyefind-deftext: #515151;
+    --eyefind-defgrey: #dedede;
 
     /* accent colours */
     --eyefind-accdarkblue: #057292;
     --eyefind-accyellow: #FFBF01;
-}
-
-#eyefind > .page-content {
-    color: var(--eyefind-deftext);
-    width: 1320px;
-    margin: auto;
 }

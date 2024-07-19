@@ -1,5 +1,6 @@
 import './eyefind.css'
 import Navbar from './components/navbar'
+import SearchList from './components/searchlist'
 
 interface Props {
     currentPage: string;
@@ -72,13 +73,10 @@ function SearchPage({ currentPage, addNewPage }: Props) {
             <Navbar
                 addNewPage={addNewPage}
             />
-            <div className="page-content">
-                <h1>Results for: {getSearchQuery(currentPage).toUpperCase()}</h1>
-                {
-                    // maybe should componentise this
-                }
-                <button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
-            </div>
+            <SearchList
+                query={getSearchQuery(currentPage)}
+                addNewPage={addNewPage}
+            />
         </>
     )
 }

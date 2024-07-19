@@ -1,16 +1,9 @@
 import './navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faSun, faMobileButton, faBurger, faSackDollar, faPlane, faBagShopping } from '@fortawesome/free-solid-svg-icons'
-import pageData from '../../../assets/pagedata.json'
 
 interface componentProps {
     addNewPage: Function;
-}
-
-const getRandomPage = (data : object) => {
-    const pages = Object.keys(data);
-    const randomIndex = Math.floor(Math.random() * pages.length)
-    return pages[randomIndex]
 }
 
 const getCurrentDay = () => {
@@ -48,7 +41,7 @@ export default function Navbar({ addNewPage }: componentProps) {
                             />
                         </div>
                         <button className="random" onClick={() => 
-                            addNewPage(getRandomPage(pageData))
+                            addNewPage('www.eyefind.info/search+random')
                         }>
                             RANDOM
                         </button>
