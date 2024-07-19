@@ -3,7 +3,7 @@
     src: url('../../ChaletLondon1960Regular.otf')
 }
 
-:root {
+#eyefind {
     max-width: 1920px;
     min-width: 1920px;
     margin: 0 auto;
@@ -13,8 +13,10 @@
     --eyefind-defwhite: #fff;
     --eyefind-defblack: #000;
     --eyefind-deftext: #515151;
+    --eyefind-defgrey: #e6e6e6;
 
     /* accent colours */
+    --eyefind-accgrey: #b4b4b4;
     --eyefind-accdarkblue: #057292;
     --eyefind-accyellow: #FFBF01;
 }

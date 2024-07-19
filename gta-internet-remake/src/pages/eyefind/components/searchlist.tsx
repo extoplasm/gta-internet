@@ -9,11 +9,17 @@ export default function SearchList({ query, addNewPage }: componentProps) {
     return (
         <>
             <div className="page-content">
-                <h2>
-                    Results for: {query.toUpperCase()}
-                </h2>
-                <div className="page-list">
-                    <button onClick={() => {addNewPage('www.toeshoesusa.com')}}>go to toeshoesusa</button>
+                <div id="search-results">
+                    <h2>
+                        Results for: {query.toUpperCase()}
+                    </h2>
+                    <div className="page-list">
+                        <button className="page" onClick={() => {addNewPage('www.toeshoesusa.com')}}>
+                            <img src="../../../pages/toeshoesusa/toeshoesbanner2.png" alt="placeholder banner" />
+                            <p className="page-url">www.toeshoesusa.com</p>
+                            <p className="page-summary">toe shoes for real</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </>

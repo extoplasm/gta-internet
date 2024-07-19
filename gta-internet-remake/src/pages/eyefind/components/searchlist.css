@@ -1,16 +1,8 @@
-:root {
-    max-width: 1920px;
-    min-width: 1920px;
-    margin: 0 auto;
+#search-results > .page-list > .page {
+    background-color: var(--eyefind-defgrey)
+}
 
-    /* default colours */
-    --eyefind-defblue: #498BC2;
-    --eyefind-defwhite: #fff;
-    --eyefind-defblack: #000;
-    --eyefind-deftext: #515151;
-    --eyefind-defgrey: #dedede;
-
-    /* accent colours */
-    --eyefind-accdarkblue: #057292;
-    --eyefind-accyellow: #FFBF01;
+#search-results > .page-list > .page > img {
+    width: 250px;
+    height: 100px;
 }
