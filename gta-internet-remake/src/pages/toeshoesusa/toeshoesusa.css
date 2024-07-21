@@ -39,17 +39,19 @@
     }
     &:nth-child(2) {
         width: 1440px;
-        height: 500px;
+        height: 450px;
     }
 }
 
 /* text */
 #toeshoesusa > .page-content > .info > .text {
     color: var(--toeshoesusa-deftext);
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 #toeshoesusa > .page-content > .info > .accented-text {
     color: var(--toeshoesusa-accentorange);
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
