@@ -1,12 +1,11 @@
-import './footer.css'
-
 export default function Footer() {
-
     return (
         <>
             <div className="footer">
                 <div className="products">
-                    one two three
+                    <img src="../../../../pages/toeshoesusa/toeshoesfooter1.png" alt="formal shoes"/>
+                    <img src="../../../../pages/toeshoesusa/toeshoesfooter2.png" alt="barefooting"/>
+                    <img src="../../../../pages/toeshoesusa/toeshoesfooter3.png" alt="repuls range"/>
                 </div>
                 <div className="description">
                     <p>
