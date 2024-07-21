@@ -1,4 +1,5 @@
 import './toeshoesusa.css'
+import Footer from './components/footer'
 
 interface Props {
     currentPage: string;
@@ -41,7 +42,7 @@ function MainPage({ addNewPage }: pageProps) {
 			<div className="page-content">
 				<div className="banner">
 					<img src="../../../pages/toeshoesusa/toeshoesbanner1.png" alt="banner1" />
-					<img src="../../../pages/toeshoesusa/toeshoesbanner2.png" alt="banner2" />
+					<img src="../../../pages/toeshoesusa/toeshoesbanner2.png" alt="banner2" /> {/* THIS IMAGE CHANGES WILL ADD LATER */}
 				</div>
 				<div className="info">
 					<div className="accented-text">
@@ -96,6 +97,7 @@ function MainPage({ addNewPage }: pageProps) {
 				<button className="anatomy" onClick={() => {addNewPage('www.toeshoesusa.com/anatomy')}}>
 					EXPLORE THE ANATOMY OF A TOE SHOE
 				</button>
+				<Footer />
 			</div>
         </>
     )
