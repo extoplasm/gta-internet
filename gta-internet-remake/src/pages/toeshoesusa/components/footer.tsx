@@ -1,7 +1,9 @@
+import './footer.css'
+
 export default function Footer() {
     return (
         <>
-            <div className="footer">
+            <div id="toeshoesusa-footer">
                 <div className="products">
                     <img src="../../../../pages/toeshoesusa/toeshoesfooter1.png" alt="formal shoes"/>
                     <img src="../../../../pages/toeshoesusa/toeshoesfooter2.png" alt="barefooting"/>

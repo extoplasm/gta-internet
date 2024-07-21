@@ -47,13 +47,13 @@
 #toeshoesusa > .page-content > .info > .text {
     color: var(--toeshoesusa-defbrown);
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 #toeshoesusa > .page-content > .info > .accented-text {
     color: var(--toeshoesusa-accentorange);
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 
 /* links */
