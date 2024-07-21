@@ -40,8 +40,8 @@ function MainPage({ addNewPage }: pageProps) {
         <>
 			<div className="page-content">
 				<div className="banner">
-					{/* will add images and stuff later */}
-					<img src="../../../pages/toeshoesusa/toeshoesbanner2.png"/>
+					<img src="../../../pages/toeshoesusa/toeshoesbanner1.png" alt="banner1" />
+					<img src="../../../pages/toeshoesusa/toeshoesbanner2.png" alt="banner2" />
 				</div>
 				<div className="info">
 					<div className="accented-text">
