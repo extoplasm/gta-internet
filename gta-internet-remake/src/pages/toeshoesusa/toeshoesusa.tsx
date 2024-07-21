@@ -93,6 +93,9 @@ function MainPage({ addNewPage }: pageProps) {
 						</p>
 					</div>
 				</div>
+				<button className="anatomy" onClick={() => {addNewPage('www.toeshoesusa.com/anatomy')}}>
+					EXPLORE THE ANATOMY OF A TOE SHOE
+				</button>
 			</div>
         </>
     )
