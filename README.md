@@ -32,9 +32,10 @@ gta website recreation in react
                 1. - [x] banner
                 2. - [x] page categories
                 3. - [x] styles
-            2. - [ ] search
-                1. - [ ] page categories
-                    1. - [ ] page lists *// maybe componentise these*
+            2. - [x] search
+                1. - [x] page categories
+                    1. - [x] page lists
+                    2. - [ ] put all into json file
             3. - [ ] main page
 			4. - [ ] error page
 				1. - [ ] random image + text
@@ -117,6 +118,9 @@ gta website recreation in react
         78. - [ ] www.bedevinweston.com
         79. - [ ] www.bullsharktestosterone.com
         80. - [ ] www.toeshoesusa.com
+            1. - [x] main page
+            2. - [ ] anatomy
+            3. - [ ] footer
         81. - [ ] www.toiletcleaneronline.com
         82. - [ ] www.ammunation.net
 3. - [ ] ads *help me list these*
