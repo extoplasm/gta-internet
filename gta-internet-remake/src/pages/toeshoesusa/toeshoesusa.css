@@ -7,7 +7,7 @@
     --toeshoesusa-defbrown: #613c34;
 
     /* accent colours */
-    --toeshoesusa-accentorange: #f8680c;
+    --toeshoesusa-accorange: #f8680c;
 }
 
 #toeshoesusa {
@@ -47,19 +47,19 @@
 #toeshoesusa > .page-content > .info > .text {
     color: var(--toeshoesusa-defbrown);
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #toeshoesusa > .page-content > .info > .accented-text {
-    color: var(--toeshoesusa-accentorange);
+    color: var(--toeshoesusa-accorange);
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 /* links */
 #toeshoesusa > .page-content > .anatomy {
     background-color: var(--toeshoesusa-defbrown);
-    color: var(--toeshoesusa-accentorange);
+    color: var(--toeshoesusa-accorange);
     font-size: 2em;
     width: 1200px;
     padding: 10px;

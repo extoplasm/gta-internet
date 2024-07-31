@@ -2,6 +2,7 @@
     margin-top: 20px;
 }
 
+/* products */
 #toeshoesusa-footer > .products {
     display: flex;
     margin: auto;
@@ -14,4 +15,36 @@
     border: var(--toeshoesusa-defbrown) 5px solid;
     width: 300px;
     height: 300px;
+}
+
+/* description */
+#toeshoesusa-footer > .description {
+    background-color: var(--toeshoesusa-accorange);
+    color: var(--toeshoesusa-defbrown);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    width: 1200px;
+    height: 150px;
+    clip-path: inset(-15px 0px 0px 0px);
+}
+
+#toeshoesusa-footer > .description > p {
+    text-align: left;
+    padding: 10px;
+    display: block;
+}
+
+#toeshoesusa-footer > .description::before {
+    content: "";
+    background-color: var(--toeshoesusa-accorange);
+    width: 150px;
+    height: 150px;
+    margin: 15px 90px;
+    transform: rotate(45deg);
+    display: inherit;
+    z-index: -1;
+    position: absolute;
 }
