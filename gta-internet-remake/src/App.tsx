@@ -28,8 +28,11 @@ export default function App() {
     // @ts-expect-error 
     const pageName = getQueryString(page) ? (!(pageData[getOriginPage(page)].childrenPreviews[getQueryString(page)] === undefined) ? page : 'www.eyefind.info/error') : (pageData[page] ? page : 'www.eyefind.info/error') 
     // ^ if there is a query string, make sure childpreview is not null before setting page otherwise check if page exists before setting page
+    
     // @ts-expect-error
     const pagePreview = getQueryString(pageName) ? pageData[getOriginPage(pageName)].childrenPreviews[getQueryString(pageName)] : pageData[getOriginPage(pageName)].preview
+    // ^ dont have to check if page exists anymore, only check for where to find previews (child or parent)
+    
     const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: pageName, preview: pagePreview, current: true }; // init new page
 
     const updatedHistory = pageHistory.map(p => ({
