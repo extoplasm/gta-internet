@@ -1,3 +1,17 @@
 #toeshoesusa-footer {
     margin-top: 20px;
 }
+
+#toeshoesusa-footer > .products {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+#toeshoesusa-footer > .products > img {
+    border: var(--toeshoesusa-defbrown) 5px solid;
+    width: 300px;
+    height: 300px;
+}

@@ -71,10 +71,10 @@
 }
 
 #header-component > .navbar > .navigation-buttons > .back-arrow-button:disabled, #header-component > .navbar > .navigation-buttons > .forward-arrow-button:disabled {
-    border: 2px var(--headercomponent-defblack) solid;
+    border: 2px var(--headercomponent-accblack) solid;
     box-shadow: var(--headercomponent-accblack) 0px 1px 1px;
     background-color: var(--headercomponent-accgrey);
-}
+} 
 
 /* history buttons */
 #header-component > .navbar > .history-button {
