@@ -13,7 +13,7 @@ interface pageProps {
 // dynamically import component
 const subPages = {
     '': MainPage,
-    'test': TestPage,
+	'anatomy': AnatomyPage,
 }
 
 const getQueryString = (page: string) => {
@@ -103,10 +103,11 @@ function MainPage({ addNewPage }: pageProps) {
     )
 }
 
-function TestPage({ addNewPage }: pageProps) {
-    return (
-        <>
-            <button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button> 
-        </>
-    )
+function AnatomyPage({ addNewPage }: pageProps) {
+	return (
+		<>
+			<button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
+			<Footer />
+		</>
+	)
 }
