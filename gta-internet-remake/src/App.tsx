@@ -22,11 +22,12 @@ const getQueryString = (page: string) => {
 }
 
 export default function App() {
-  const [pageHistory, setPageHistory] = useState<History[]>([{id: 1, name: 'www.eyefind.info', preview: "--- EYEFIND... it's like a series of tubes ---", current: true}])
+  const [pageHistory, setPageHistory] = useState<History[]>([{id: 1, name: 'www.eyefind.info', preview: pageData['www.eyefind.info'].preview, current: true}])
 
   const addNewPage = (page : string) => {
-    // @ts-expect-error
-    const pageName = getQueryString(page) ? (pageData[getOriginPage(page)].childrenPreviews[getQueryString(page)] ? page : 'www.eyefind.info/error') : (pageData[page] ? page : 'www.eyefind.info/error') 
+    // check if page exists before setting pagename to page
+    // @ts-expect-error 
+    const pageName = getQueryString(page) ? (!(pageData[getOriginPage(page)].childrenPreviews[getQueryString(page)] === null) ? page : 'www.eyefind.info/error') : (pageData[page] ? page : 'www.eyefind.info/error') 
     // @ts-expect-error
     const pagePreview = getQueryString(pageName) ? pageData[getOriginPage(pageName)].childrenPreviews[getQueryString(pageName)] : pageData[getOriginPage(pageName)].preview
     const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: pageName, preview: pagePreview, current: true }; // init new page
