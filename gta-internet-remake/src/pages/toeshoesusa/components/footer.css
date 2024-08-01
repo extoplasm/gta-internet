@@ -48,3 +48,23 @@
     z-index: -1;
     position: absolute;
 }
+
+/* bottom */ 
+#toeshoesusa-footer > .bottom {
+    width: 1440px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: var(--toeshoesusa-defbrown);
+    clip-path: path("M1440,200 L0,200 L0,0 Q720,300,1440,0 Z");
+    display: block;
+}
+
+#toeshoesusa-footer > .bottom::before {
+    content: "";
+    background-color: var(--toeshoesusa-accorange);
+    width: 1440px;
+    height: 200px;
+    display: inherit;
+    margin: -10px auto;
+    clip-path: path("M1440,0 Q720,300,0,0 L0,15 Q720,315,1440,15 L1440,0 z")
+}

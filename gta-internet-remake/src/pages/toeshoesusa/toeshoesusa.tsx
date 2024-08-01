@@ -106,8 +106,10 @@ function MainPage({ addNewPage }: pageProps) {
 function AnatomyPage({ addNewPage }: pageProps) {
 	return (
 		<>
-			<button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
-			<Footer />
+			<div className="page-content">
+				<button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
+				<Footer />
+			</div>
 		</>
 	)
 }
