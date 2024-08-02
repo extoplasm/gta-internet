@@ -1,5 +1,6 @@
 import './toeshoesusa.css'
 import Footer from './components/footer'
+import Banner from './components/banner'
 
 interface Props {
     currentPage: string;
@@ -41,8 +42,8 @@ function MainPage({ addNewPage }: pageProps) {
         <>
 			<div className="page-content">
 				<div className="banner">
-					<img src="../../../pages/toeshoesusa/toeshoesbanner1.png" alt="banner1" />
-					<img src="../../../pages/toeshoesusa/toeshoesbanner2.png" alt="banner2" /> {/* THIS IMAGE CHANGES WILL ADD LATER */}
+					<img src="../../../pages/toeshoesusa/toeshoeslogo.png" alt="banner1" />
+					<Banner/>
 				</div>
 				<div className="info">
 					<div className="accented-text">
