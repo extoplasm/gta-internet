@@ -2,7 +2,7 @@
   "name": "gta-internet-remake",
   "private": true,
   "version": "0.0.0",
-  "homepage": "extoplasm.github.io/gta-internet",
+  "homepage": "https://extoplasm.github.io/gta-internet/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
