@@ -7,7 +7,7 @@
     display: flex;
     margin: auto;
     text-align: center;
-    width: 1200px;
+    width: 1100px;
     justify-content: space-between;
 }
 
@@ -20,21 +20,21 @@
 /* description */
 #toeshoesusa-footer > .description {
     background-color: var(--toeshoesusa-accorange);
-    color: var(--toeshoesusa-defbrown);
-    font-weight: bold;
-    font-size: 1.2em;
     margin: 30px auto;
     position: relative;
     z-index: 1;
-    width: 1200px;
+    width: 1100px;
     height: 150px;
     clip-path: inset(-20px 0px 0px 0px);
 }
 
 #toeshoesusa-footer > .description > p {
+    color: var(--toeshoesusa-defbrown);
+    font-weight: bold;
+    font-size: 1.1em;
     text-align: left;
-    padding: 10px;
     display: block;
+    padding: 15px;
 }
 
 #toeshoesusa-footer > .description::before {
@@ -51,20 +51,20 @@
 
 /* bottom */ 
 #toeshoesusa-footer > .bottom {
-    width: 1440px;
+    width: 1200px;
     height: 200px;
-    margin: 100px auto;
+    margin: 100px 0px auto auto;
     background-color: var(--toeshoesusa-defbrown);
-    clip-path: path("M1440,200 L0,200 L0,0 Q720,300,1440,0 Z");
+    clip-path: path("M1200,200 L0,200 L0,0 Q600,300,1200,0 Z");
     display: block;
 }
 
 #toeshoesusa-footer > .bottom::before {
     content: "";
     background-color: var(--toeshoesusa-accorange);
-    width: 1440px;
+    width: 1200px;
     height: 200px;
     display: inherit;
     margin: -10px auto;
-    clip-path: path("M1440,0 Q720,300,0,0 L0,15 Q720,315,1440,15 L1440,0 z")
+    clip-path: path("M1200,0 Q600,300,0,0 L0,15 Q600,315,1200,15 L1200,0 z")
 }

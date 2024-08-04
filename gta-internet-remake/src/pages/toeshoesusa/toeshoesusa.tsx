@@ -116,6 +116,27 @@ function AnatomyPage({ addNewPage }: pageProps) {
 						</p>
 					</div>
 				</div>
+				<div className="heading">
+					<img src="../../../pages/toeshoesusa/anatomy/toeshoesanatomy1.png" alt="toe shoe" />
+					<h1>EXPLORE THE ANATOMY OF A TOE SHOE</h1>
+				</div>
+				<div className="breakdown">
+					<img src="../../../pages/toeshoesusa/anatomy/toeshoesanatomy2.png" alt="exploded view toe shoe" />
+					<div className="description">
+						<h1>TOES</h1>
+						<p>
+							Look like an ape, walk like a duck, swim like <br/>
+							a penguin. Individual toe pockets - or <br/>
+							Tockets - force the toes to splay, leaving <br/>
+							them free to snag on sharp objects just as <br/>
+							they would if you weren't wearing any <br/>
+							protective footwear at all. If only people had <br/>
+							invented Toe Shoes instead of normal <br/>
+							shoes perhaps humanity wouldn't be in this <br/>
+							mess.
+						</p>
+					</div>
+				</div>
 				<Footer />
 			</div>
 		</>

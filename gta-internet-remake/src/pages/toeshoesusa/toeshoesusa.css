@@ -16,17 +16,17 @@
 
 #toeshoesusa {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../../../pages/toeshoesusa/toeshoesbackgroundorange.png");
+    background-image: url("../../../pages/toeshoesusa/main/toeshoesbackgroundorange.png");
     background-size: 10%;
     background-repeat: repeat;
 }
 
 #toeshoesusa > .page-content {
-    width: 1440px;
+    width: 1200px;
     margin: auto;
 	text-align: center;
-    background-image: url("../../../pages/toeshoesusa/toeshoesbackgroundwhite.png");
-    background-size: 12%;
+    background-image: url("../../../pages/toeshoesusa/main/toeshoesbackgroundwhite.png");
+    background-size: 13%;
     background-repeat: repeat;
 }
 
@@ -38,12 +38,12 @@
 
 #toeshoesusa > .page-content > .banner > img {
     &:nth-child(1) {
-        width: 1440px;
-        height: 400px;
+        width: 1200px;
+        height: 330px;
     }
     &:nth-child(2) {
-        width: 1440px;
-        height: 450px;
+        width: 1200px;
+        height: 400px;
     }
 }
 
@@ -51,12 +51,14 @@
 #toeshoesusa > .page-content > .info > .text {
     color: var(--toeshoesusa-defbrown);
     font-weight: bold;
+    margin-top: 10px;
     font-size: 1.2em;
 }
 
 #toeshoesusa > .page-content > .info > .accented-text {
     color: var(--toeshoesusa-accorange);
     font-weight: bold;
+    margin-top: 10px;
     padding: 10px;
     font-size: 1.5em;
 }
@@ -66,8 +68,25 @@
     background-color: var(--toeshoesusa-defbrown);
     color: var(--toeshoesusa-accorange);
     font-size: 2em;
-    width: 1200px;
+    width: 1100px;
     padding: 10px;
     margin: 20px 0px 0px 0px;
     font-weight: bold;
+}
+
+/* anatomy */
+#toeshoesusa > .page-content > .heading {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#toeshoesusa > .page-content > .heading > img {
+    width: 400px;
+    height: 275px;
+}
+
+#toeshoesusa > .page-content > .heading > h1 {
+    color: var(--toeshoesusa-accorange);
+    font-size: 2em;
 }
