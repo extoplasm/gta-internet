@@ -144,8 +144,7 @@ icons from https://fontawesome.com/, will not be exact match, but try your best,
 dont worry if images dont exactly fit, or aren't exactly like in game or aren't the best resolution, you can
 - use remove.bg to remove backgrounds
 - add drop shadow in css
-- resize it smaller
-- etc.
+- resize it smaller\
 depending on my feelings later i may actually replace or redraw images and icons, but just working on a rough draft of all the websites for now
 
 this has been done before btw: https://github.com/nicxes/gtavweb, although not to full extent and using php
