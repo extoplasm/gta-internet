@@ -35,7 +35,9 @@ gta website recreation in react
             2. - [x] search
                 1. - [x] page categories
                     1. - [x] page lists
-                    2. - [ ] put all into json file
+                    2. - [ ] put all into pagecategories.json
+                2. - [ ] random
+                    1. - [ ] randomly take from list in pagecategories.json
             3. - [ ] main page
 			4. - [ ] error page
 				1. - [ ] random image + text
@@ -117,10 +119,10 @@ gta website recreation in react
         77. - [ ] www.fabienlaroucheyoga.com
         78. - [ ] www.bedevinweston.com
         79. - [ ] www.bullsharktestosterone.com
-        80. - [ ] www.toeshoesusa.com
+        80. - [x] www.toeshoesusa.com
             1. - [x] main page
-            2. - [ ] anatomy
-            3. - [ ] footer
+            2. - [x] anatomy
+            3. - [x] footer
         81. - [ ] www.toiletcleaneronline.com
         82. - [ ] www.ammunation.net
 3. - [ ] ads *help me list these*
@@ -133,13 +135,18 @@ gta website recreation in react
 read [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 # notes
-all sites are in the xbox aspect ratio of width 1920px (max-width and min-width are set to these on all websites)
-
+all sites are in the xbox aspect ratio of width 1920px (max-width and min-width are set to these on all websites)\
 I DO NOT WANT TO MAKE RESPONSIVE UI!!!!!!!!!!!!!
 
 all ui is based off michael's phone
 
-icons from https://fontawesome.com/, will not be exact match, but try your best, custom made icons may be added though.
+icons from https://fontawesome.com/, will not be exact match, but try your best, custom made icons may be added though.\
+dont worry if images dont exactly fit, or aren't exactly like in game or aren't the best resolution, you can
+- use remove.bg to remove backgrounds
+- add drop shadow in css
+- resize it smaller
+- etc.
+depending on my feelings later i may actually replace or redraw images and icons, but just working on a rough draft of all the websites for now
 
 this has been done before btw: https://github.com/nicxes/gtavweb, although not to full extent and using php
 
