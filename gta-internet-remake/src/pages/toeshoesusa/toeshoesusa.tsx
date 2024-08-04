@@ -104,7 +104,7 @@ function MainPage({ addNewPage }: pageProps) {
     )
 }
 
-function AnatomyPage({ addNewPage }: pageProps) {
+function AnatomyPage({ }: pageProps) {
 	return (
 		<>
 			<div className="page-content"> 
