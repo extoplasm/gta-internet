@@ -108,13 +108,11 @@ function AnatomyPage({ addNewPage }: pageProps) {
 	return (
 		<>
 			<div className="page-content"> 
-				<div className="info">
-					<div className="accented-text">
-						<p>
-							Where sport fan and nerd combine. All function, no fashion. <br/>
-							Anything ugly must be ultra-efficient.
-						</p>
-					</div>
+				<div className="tagline">
+					<p>
+						Where sport fan and nerd combine. All function, no fashion. <br/>
+						Anything this ugly must be ultra-efficient.
+					</p>
 				</div>
 				<div className="heading">
 					<img src="../../../pages/toeshoesusa/anatomy/toeshoesanatomy1.png" alt="toe shoe" />
@@ -126,7 +124,7 @@ function AnatomyPage({ addNewPage }: pageProps) {
 						<h1>TOES</h1>
 						<p>
 							Look like an ape, walk like a duck, swim like <br/>
-							a penguin. Individual toe pockets - or <br/>
+							a penguin. Individual toe pockets – or <br/>
 							Tockets - force the toes to splay, leaving <br/>
 							them free to snag on sharp objects just as <br/>
 							they would if you weren't wearing any <br/>
