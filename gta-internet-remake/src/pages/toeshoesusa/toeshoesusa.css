@@ -5,6 +5,7 @@
 
     /* default colours */
     --toeshoesusa-defbrown: #613c34;
+    --toeshoesusa-defwhite: #e7eae9;
 
     /* accent colours */
     --toeshoesusa-accorange: #f8680c;
@@ -82,11 +83,53 @@
 }
 
 #toeshoesusa > .page-content > .heading > img {
-    width: 400px;
-    height: 275px;
+    width: 350px;
+    height: 235px;
+    filter: drop-shadow(0px 10px 2px rgb(57, 57, 57))
 }
 
 #toeshoesusa > .page-content > .heading > h1 {
     color: var(--toeshoesusa-accorange);
     font-size: 2em;
+    margin: auto 0px;
 }
+
+#toeshoesusa > .page-content > .breakdown {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0px 70px;
+}
+
+#toeshoesusa > .page-content > .breakdown > img {
+    width: 500px;
+    height: 550px;
+    filter: drop-shadow(0px 10px 2px rgb(57, 57, 57))
+}
+
+#toeshoesusa > .page-content > .breakdown > .description {
+    background-color: var(--toeshoesusa-accorange);
+    margin: 0px 50px;
+    position: relative;
+    z-index: 1;
+    width: 470px;
+    padding: 30px;
+}
+
+#toeshoesusa > .page-content > .breakdown > .description > h1 {
+    color: var(--toeshoesusa-defbrown);
+    text-align: left;
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0;
+    display: block;
+}
+
+#toeshoesusa > .page-content > .breakdown > .description > p {
+    color: var(--toeshoesusa-defwhite);
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-top: 20px;
+    display: block;
+}
+
