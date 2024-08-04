@@ -107,8 +107,15 @@ function MainPage({ addNewPage }: pageProps) {
 function AnatomyPage({ addNewPage }: pageProps) {
 	return (
 		<>
-			<div className="page-content">
-				<button onClick={() => addNewPage('www.eyefind.info')}>go to www.eyefind.info</button>
+			<div className="page-content"> 
+				<div className="info">
+					<div className="accented-text">
+						<p>
+							Where sport fan and nerd combine. All function, no fashion. <br/>
+							Anything ugly must be ultra-efficient.
+						</p>
+					</div>
+				</div>
 				<Footer />
 			</div>
 		</>

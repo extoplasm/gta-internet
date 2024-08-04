@@ -15,7 +15,7 @@ export default function Banner() {
             setBannerIndex(prevIndex => (prevIndex % images.length) + 1);
         }, 2000);
 
-        return () => clearInterval(interval); // Cleanup interval on component unmount
+        return () => clearInterval(interval); // cleanup interval on component unmount
       }, []);
 
     return (

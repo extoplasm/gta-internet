@@ -10,6 +10,10 @@
     --toeshoesusa-accorange: #f8680c;
 }
 
+#toeshoesusa p {
+    margin: 0;
+}
+
 #toeshoesusa {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../../../pages/toeshoesusa/toeshoesbackgroundorange.png");
@@ -53,6 +57,7 @@
 #toeshoesusa > .page-content > .info > .accented-text {
     color: var(--toeshoesusa-accorange);
     font-weight: bold;
+    padding: 10px;
     font-size: 1.5em;
 }
 
@@ -63,5 +68,6 @@
     font-size: 2em;
     width: 1200px;
     padding: 10px;
+    margin: 20px 0px 0px 0px;
     font-weight: bold;
 }

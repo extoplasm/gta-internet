@@ -23,12 +23,12 @@
     color: var(--toeshoesusa-defbrown);
     font-weight: bold;
     font-size: 1.2em;
-    margin: auto;
+    margin: 30px auto;
     position: relative;
     z-index: 1;
     width: 1200px;
     height: 150px;
-    clip-path: inset(-15px 0px 0px 0px);
+    clip-path: inset(-20px 0px 0px 0px);
 }
 
 #toeshoesusa-footer > .description > p {
@@ -42,7 +42,7 @@
     background-color: var(--toeshoesusa-accorange);
     width: 150px;
     height: 150px;
-    margin: 15px 90px;
+    margin: 10px 90px;
     transform: rotate(45deg);
     display: inherit;
     z-index: -1;
