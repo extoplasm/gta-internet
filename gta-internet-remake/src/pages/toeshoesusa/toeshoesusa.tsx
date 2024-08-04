@@ -42,7 +42,7 @@ function MainPage({ addNewPage }: pageProps) {
         <>
 			<div className="page-content">
 				<div className="banner">
-					<img src="../../../pages/toeshoesusa/toeshoeslogo.png" alt="banner1" />
+					<img src="../../../pages/toeshoesusa/main/toeshoeslogo.png" alt="banner1" />
 					<Banner/>
 				</div>
 				<div className="info">

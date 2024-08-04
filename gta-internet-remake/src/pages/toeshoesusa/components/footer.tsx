@@ -5,9 +5,9 @@ export default function Footer() {
         <>
             <div id="toeshoesusa-footer">
                 <div className="products">
-                    <img src="../../../../pages/toeshoesusa/toeshoesfooter1.png" alt="formal shoes"/>
-                    <img src="../../../../pages/toeshoesusa/toeshoesfooter2.png" alt="barefooting"/>
-                    <img src="../../../../pages/toeshoesusa/toeshoesfooter3.png" alt="repuls range"/>
+                    <img src="../../../../pages/toeshoesusa/footer/toeshoesfooter1.png" alt="formal shoes"/>
+                    <img src="../../../../pages/toeshoesusa/footer/toeshoesfooter2.png" alt="barefooting"/>
+                    <img src="../../../../pages/toeshoesusa/footer/toeshoesfooter3.png" alt="repuls range"/>
                 </div>
                 <div className="description">
                     <p>
