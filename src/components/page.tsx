@@ -8,7 +8,7 @@ interface Props {
 
 // dynamically import component
 const loadComponent = (componentName: string) => {
-    return lazy(() => import(/* @vite-ignore */`../pages/${componentName}`));
+    return lazy(() => import(/* @vite-ignore */`../websites/${componentName}`));
 };
 
 const componentMapping = Object.fromEntries(
@@ -20,7 +20,7 @@ const getOriginPage = (page : string) => {
     let match = page.match(/^[^\/]+/); // match up to the first / to get whichever page we need
     return match ? match[0] : '';
 }
-
+ 
 export default function Page({ currentPage, addNewPage }: Props) {
     const PageComponent = componentMapping[getOriginPage(currentPage)]
     return (
