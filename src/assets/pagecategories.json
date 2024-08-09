@@ -1,6 +1,20 @@
 {
     "media and entertainment": [
-        ""
+        {
+            "url": "www.lifeinvader.com",
+            "description": "The reason the world never gets anything done any more.",
+            "imagesrc": "none"
+        },
+        {
+            "url": "www.classicvinewood.com",
+            "description": "Sequels, remakes, romantic comedy sequels, superheroes, CGI nonsense and one-dimensional androgynous vampires.",
+            "imagesrc": "none"
+        },
+        {
+            "url": "www.fameorshame.net",
+            "description": "The talent show America deserves.",
+            "imagesrc": "none"
+        }
     ],
     "food and drink": [
         ""
@@ -14,7 +28,7 @@
     "fashion and health": [
         {
             "url": "www.toeshoesusa.com",
-            "description": "toe shoes for real",
+            "description": "Toe Shoes. Modern on the outside, prehistoric on the inside. Don't judge a foot by its cover.",
             "imagesrc": "../../../pages/toeshoesusa/toeshoesbanner2.png"
         }
     ]
