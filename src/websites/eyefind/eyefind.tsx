@@ -1,6 +1,7 @@
 import './eyefind.css'
 import Navbar from './components/navbar'
 import SearchList from './components/searchlist'
+import Advertisement from './../../components/advertisement'
 
 interface Props {
     currentPage: string;
@@ -61,18 +62,18 @@ function MainPage({ currentPage, addNewPage }: Props) {
             />
             <p>{currentPage}</p>
             <div className="page-content">
-                <div className="notice-of-the-day">
+                <div className="news-story-of-the-day">
                     <h1>NEWS STORY OF THE DAY</h1>
-                    <p>Cult crazy flees with cash.</p>
-                    <img src="" alt="Daily Globe Logo" />
+                    <p>placeholder</p>
+                    <img src="../../../pages/eyefind/eyefind-logo.png" alt="placeholder" />
                     <br/>
-                    <p>Mike Dunn - Daily Globe</p>
+                    <p>placeholder author - placeholder news</p>
                     <p>
-                        It has been a bizarre few weeks for the Epsilon Program. Reports indicate Epsilon's <br/>
-                        founder and leader, Chris Fromage, has absconded amid accusation of a car theft. 
+                        placeholder content
                     </p>
                     <button className="expand">READ FULL ARTICLE</button>
                 </div>
+                <Advertisement addNewPage={addNewPage}/>
                 <div className="website-of-the-minute">
                     <h1>WEBSITE OF THE MINUTE</h1>
                     <p>www.toeshoesusa.com</p>
