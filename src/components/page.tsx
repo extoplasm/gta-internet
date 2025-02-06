@@ -8,7 +8,7 @@ interface Props {
 
 // dynamically import component
 const loadComponent = (componentName: string) => {
-    return lazy(() => import(/* @vite-ignore */`../websites/${componentName}`));
+    return lazy(() => import(`../pages/${componentName}/${componentName}.tsx`));
 };
 
 const componentMapping = Object.fromEntries(
