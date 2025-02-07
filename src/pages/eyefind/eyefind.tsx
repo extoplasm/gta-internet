@@ -1,6 +1,7 @@
 import './eyefind.css'
 import Navbar from './components/navbar'
 import SearchList from './components/searchlist'
+import Advertisement from './../../components/advertisement'
 
 interface Props {
     currentPage: string;
@@ -59,10 +60,26 @@ function MainPage({ currentPage, addNewPage }: Props) {
             <Navbar 
                 addNewPage={addNewPage}
             />
-			<div className="page-content">
-				{currentPage}
-				<button onClick={() => addNewPage('www.toeshoesusa.com')}>go to www.toeshoesusa.com</button>
-			</div>	
+            <p>{currentPage}</p>
+            <div className="page-content">
+                <div className="news-story-of-the-day">
+                    <h1>NEWS STORY OF THE DAY</h1>
+                    <p>placeholder</p>
+                    <img src="../../../pages/eyefind/eyefind-logo.png" alt="placeholder" />
+                    <br/>
+                    <p>placeholder author - placeholder news</p>
+                    <p>
+                        placeholder content
+                    </p>
+                    <button className="expand">READ FULL ARTICLE</button>
+                </div>
+                <Advertisement addNewPage={addNewPage}/>
+                <div className="website-of-the-minute">
+                    <h1>WEBSITE OF THE MINUTE</h1>
+                    <p>www.toeshoesusa.com</p>
+                    <p>Toe Shoes. Modern on the outside, prehistoric on the inside. Don't judge a foot by its cover.</p>
+                </div>
+            </div>
 		</>
     )
 }
