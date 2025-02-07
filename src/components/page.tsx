@@ -8,7 +8,7 @@ interface Props {
 
 // dynamically import component
 const loadComponent = (componentName: string) => {
-    return lazy(() => import(/* @vite-ignore */`../websites/${componentName}`)); // this will raise error which breaks when running npm build, not sure how to fix this (maybe routing)
+    return lazy(() => import(`../pages/${componentName}/${componentName}.tsx`));
 };
 
 const componentMapping = Object.fromEntries(

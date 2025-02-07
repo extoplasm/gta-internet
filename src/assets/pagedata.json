@@ -1,7 +1,7 @@
 {
     "www.eyefind.info": {
         "preview": "--- EYEFIND... it's like a series of tubes ---",
-        "component": "eyefind/eyefind",
+        "component": "eyefind",
         "childrenPreviews": {
             "error": "--- something went wrong idk ---",
             "search": "--- EYEFOUNDIT! Look what EYE found! ---"
@@ -9,7 +9,7 @@
     },
     "www.toeshoesusa.com": {
         "preview": "",
-        "component": "toeshoesusa/toeshoesusa",
+        "component": "toeshoesusa",
         "childrenPreviews": {
             "anatomy": ""
         }
