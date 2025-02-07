@@ -42,7 +42,7 @@ function MainPage({ addNewPage }: pageProps) {
         <>
 			<div className="page-content">
 				<div className="banner">
-					<img src="../../../pages/toeshoesusa/main/toeshoeslogo.png" alt="banner1" />
+					<img src="../../../gta-internet/pages/toeshoesusa/main/toeshoeslogo.png" alt="banner1" />
 					<Banner/>
 				</div>
 				<div className="info">
@@ -115,11 +115,11 @@ function AnatomyPage({ }: pageProps) {
 					</p>
 				</div>
 				<div className="heading">
-					<img src="../../../pages/toeshoesusa/anatomy/toeshoesanatomy1.png" alt="toe shoe" />
+					<img src="../../../gta-internet/pages/toeshoesusa/anatomy/toeshoesanatomy1.png" alt="toe shoe" />
 					<h1>EXPLORE THE ANATOMY OF A TOE SHOE</h1>
 				</div>
 				<div className="breakdown">
-					<img src="../../../pages/toeshoesusa/anatomy/toeshoesanatomy2.png" alt="exploded view toe shoe" />
+					<img src="../../../gta-internet/pages/toeshoesusa/anatomy/toeshoesanatomy2.png" alt="exploded view toe shoe" />
 					<div className="description">
 						<h1>TOES</h1>
 						<p>

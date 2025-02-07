@@ -19,7 +19,7 @@ export default function Navbar({ addNewPage }: componentProps) {
             <div id="eyefind-navbar">
                 <div className="banner">
                     <div className="info">
-                        <img className="logo" src="../../pages/eyefind/eyefind-logo.png" alt="logo" />
+                        <img className="logo" src="../../gta-inernet/pages/eyefind/eyefind-logo.png" alt="logo" />
                         <div className="weather">
                             <div className="weather-text">
                                 <p>Rockford Hills</p>
