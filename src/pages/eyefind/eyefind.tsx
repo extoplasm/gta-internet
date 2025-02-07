@@ -1,7 +1,6 @@
 import './eyefind.css'
 import Navbar from './components/navbar'
 import SearchList from './components/searchlist'
-import Advertisement from './../../components/advertisement'
 
 interface Props {
     currentPage: string;
@@ -73,7 +72,6 @@ function MainPage({ currentPage, addNewPage }: Props) {
                     </p>
                     <button className="expand">READ FULL ARTICLE</button>
                 </div>
-                <Advertisement addNewPage={addNewPage}/>
                 <div className="website-of-the-minute">
                     <h1>WEBSITE OF THE MINUTE</h1>
                     <p>www.toeshoesusa.com</p>

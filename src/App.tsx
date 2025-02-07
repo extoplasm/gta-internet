@@ -34,12 +34,10 @@ export default function App() {
     // ^ dont have to check if page exists anymore, only check for where to find previews (child or parent)
     
     const newCurrent = { id: pageHistory[0] ? pageHistory[0].id + 1 : 1, name: pageName, preview: pagePreview, current: true }; // init new page
-
     const updatedHistory = pageHistory.map(p => ({
       ...p,
       current: false,
     })); // make previous history all false
-
     setPageHistory([newCurrent, ...updatedHistory])
   }
 
