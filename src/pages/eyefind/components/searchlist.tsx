@@ -32,7 +32,7 @@ export default function SearchList({ query, addNewPage }: componentProps) {
                                 <button className="page" 
                                         key={_}
                                         onClick={() => addNewPage(e.url)}>
-                                    <img src={e.imagesrc} alt={e.url} />
+                                    <img src={`${import.meta.env.BASE_URL}${e.imagesrc}`} alt={e.url} />
                                     <p>{e.description}</p>
                                 </button>
                             )

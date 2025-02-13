@@ -17,7 +17,7 @@
 
 #toeshoesusa {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../../../pages/toeshoesusa/main/toeshoesbackgroundorange.png");
+    background-image: url("/pages/toeshoesusa/main/toeshoesbackgroundorange.png");
     background-size: 10%;
     background-repeat: repeat;
 }
@@ -26,7 +26,7 @@
     width: 1200px;
     margin: auto;
 	text-align: center;
-    background-image: url("../../../pages/toeshoesusa/main/toeshoesbackgroundwhite.png");
+    background-image: url("/pages/toeshoesusa/main/toeshoesbackgroundwhite.png");
     background-size: 13%;
     background-repeat: repeat;
 }

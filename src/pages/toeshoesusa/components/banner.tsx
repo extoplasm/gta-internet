@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react'
 export default function Banner() {
     const [bannerIndex, setBannerIndex] = useState(1)
     const images = [
-        "../../../../gta-internet/pages/toeshoesusa/main/toeshoesbanner1.png",
-        "../../../../gta-internet/pages/toeshoesusa/main/toeshoesbanner2.png",
-        "../../../../gta-internet/pages/toeshoesusa/main/toeshoesbanner3.png",
-        "../../../../gta-internet/pages/toeshoesusa/main/toeshoesbanner4.png",
-        "../../../../gta-internet/pages/toeshoesusa/main/toeshoesbanner5.png",
+        `${import.meta.env.BASE_URL}/pages/toeshoesusa/main/toeshoesbanner1.png`,
+        `${import.meta.env.BASE_URL}/pages/toeshoesusa/main/toeshoesbanner2.png`,
+        `${import.meta.env.BASE_URL}/pages/toeshoesusa/main/toeshoesbanner3.png`,
+        `${import.meta.env.BASE_URL}/pages/toeshoesusa/main/toeshoesbanner4.png`,
+        `${import.meta.env.BASE_URL}/pages/toeshoesusa/main/toeshoesbanner5.png`,
     ]
     
     useEffect(() => {

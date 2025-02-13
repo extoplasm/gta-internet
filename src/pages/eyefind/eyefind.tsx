@@ -64,7 +64,7 @@ function MainPage({ currentPage, addNewPage }: Props) {
                 <div className="news-story-of-the-day">
                     <h1>NEWS STORY OF THE DAY</h1>
                     <p>placeholder</p>
-                    <img src="../../../gta-internet/pages/eyefind/eyefind-logo.png" alt="placeholder" />
+                    <img src={`${import.meta.env.BASE_URL}/pages/eyefind/eyefind-logo.png`} alt="placeholder" />
                     <br/>
                     <p>placeholder author - placeholder news</p>
                     <p>
