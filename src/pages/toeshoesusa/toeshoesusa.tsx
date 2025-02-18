@@ -124,7 +124,7 @@ function AnatomyPage({ }: pageProps) {
 						<h1>TOES</h1>
 						<p>
 							Look like an ape, walk like a duck, swim like <br/>
-							a penguin. Individual toe pockets – or <br/>
+							a penguin. Individual toe pockets - or <br/>
 							Tockets - force the toes to splay, leaving <br/>
 							them free to snag on sharp objects just as <br/>
 							they would if you weren't wearing any <br/>

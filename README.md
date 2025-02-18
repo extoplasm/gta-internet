@@ -151,5 +151,3 @@ depending on my feelings later i may actually replace or redraw images and icons
 this has been done before btw: https://github.com/nicxes/gtavweb, although not to full extent and using php
 
 will work on uploading captures of websites from in game
-
-will host on github pages soon
