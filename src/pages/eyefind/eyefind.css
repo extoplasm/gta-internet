@@ -13,6 +13,7 @@
     --eyefind-defwhite: #fff;
     --eyefind-defblack: #000;
     --eyefind-deftext: #515151;
+    --eyefind-defgrey: #e6e6e6;
 
     /* accent colours */
     --eyefind-accgrey: #b4b4b4;
@@ -24,4 +25,20 @@
     color: var(--eyefind-deftext);
     width: 1320px;
     margin: auto;
+}
+
+#eyefind > .page-content > .section {
+    background-color: var(--eyefind-defgrey);
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+#eyefind > .page-content > .section > .header {
+    font-size: 1.6em;
+    margin: 5px 0px;
+}
+
+#eyefind > .page-content > .section > .logo {
+    width: 300px;
+    height: 130px;
 }

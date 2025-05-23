@@ -61,19 +61,21 @@ function MainPage({ currentPage, addNewPage }: Props) {
             />
             <p>{currentPage}</p>
             <div className="page-content">
-                <div className="news-story-of-the-day">
-                    <h1>NEWS STORY OF THE DAY</h1>
+                <div className="news-story-of-the-day section">
+                    <h1 className="header">NEWS STORY OF THE DAY</h1>
                     <p>placeholder</p>
-                    <img src={`${import.meta.env.BASE_URL}/pages/eyefind/eyefind-logo.png`} alt="placeholder" />
+                    <img src={`${import.meta.env.BASE_URL}/pages/eyefind/eyefind-logo.png`} alt="placeholder" className="logo"/>
                     <br/>
-                    <p>placeholder author - placeholder news</p>
+                    <p>Mike Dunn - Daily Globe</p>
                     <p>
-                        placeholder content
+                        It has been a bizarre few weeks for the Epsilon Program. Reports indicate Epsilon's <br/>
+                        founder and leader, Cris Formage, has absconded amid accusation of a car theft.
                     </p>
                     <button className="expand">READ FULL ARTICLE</button>
                 </div>
-                <div className="website-of-the-minute">
-                    <h1>WEBSITE OF THE MINUTE</h1>
+                <div className="website-of-the-minute section">
+                    <h1 className="header">WEBSITE OF THE MINUTE</h1>
+                    <img src={`${import.meta.env.BASE_URL}/pages/toeshoesusa/main/toeshoeslogo.png`} alt="logo" className="logo"/>
                     <p>www.toeshoesusa.com</p>
                     <p>Toe Shoes. Modern on the outside, prehistoric on the inside. Don't judge a foot by its cover.</p>
                 </div>
